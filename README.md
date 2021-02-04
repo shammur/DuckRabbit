@@ -27,10 +27,15 @@ File: duckrabbit_data.tsv
 The file includes the dataset with following columns:
 
 <ID\>: Index the examples
+
 <SENTENCE\>:	sentence used to probe the intend model
+
 <BLOCK\>:	block id (this is unique to each pattern-type). This id also represent groups of sentences to be compared together for taxonomic relation or disjoint analysis.
+
 <PATTERN_TYPE\>:	this include information for the construction and the domain as mentioned above
+
 <ACTUAL\>:	the current situation in the example. NR=No-relation, NR*=No-relation with inverted orders, "\>"=subset - superset, "<"=superset - subset
+
 <ACCEPTABLE\>:  the acceptability status of the sentence (Y=acceptable/N=not-acceptable)
 
 For example:
