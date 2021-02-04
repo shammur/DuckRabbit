@@ -51,10 +51,10 @@ ID	SENTENCE	BLOCK	PATTERN_TYPE	ACTUAL	ACCEPTABLE
 * To cite the paper:
 ```
 @inproceedings{Zamparelli20202,
-  	Author = {Shammur Absar Chowdhury and Roberto Zamparelli},
-	Booktitle = {Arxiv},
-	Title = {On the Taxonomic Pitfalls of Transformer Networks},
-	Year = {2021}}
+Author = {Shammur Absar Chowdhury and Roberto Zamparelli},
+Booktitle = {Arxiv},
+Title = {On the Taxonomic Pitfalls of Transformer Networks},
+Year = {2021}}
 ```
 
 
