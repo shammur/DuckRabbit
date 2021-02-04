@@ -2,7 +2,7 @@
 
 The repository include a novel dataset: **DUCKRABBIT**, to probe the ability of neural models to capture semantic hierarchies in use.
 The dataset was collected by the authors and checked with the help of WordNET. Acceptability was treated as binary.
-The data include blocks (4 example in each block) which are either in a taxonomic relation or disjoint. In addition, for disjoint example we also added its inverse. This yielding cases where the presuppositions are satisfied and cases where they are violated due to the unwanted presence/absence of a taxonomic relation or to its wrong order.
+The data include examples which are either in a taxonomic relation or disjoint. In addition, for disjoint example we also added its inverse. This yielding cases where the presuppositions are satisfied and cases where they are violated due to the unwanted presence/absence of a taxonomic relation or to its wrong order.
 
 This repositoy contains the pattern file used to generate the data (pattern_taxonomies-duckrabbit-dataset.txt) and the expanded dataset (duckrabbit_data.tsv).
 
@@ -48,5 +48,16 @@ ID	SENTENCE	BLOCK	PATTERN_TYPE	ACTUAL	ACCEPTABLE
 ```
 
 
-[template]: img/template.png "DUCKRABBIT Pattern Template"
+* To cite the paper:
+```
+@inproceedings{Zamparelli20202,
+  	Author = {Shammur Absar Chowdhury and Roberto Zamparelli},
+	Booktitle = {Arxiv},
+	Title = {On the Taxonomic Pitfalls of Transformer Networks},
+	Year = {2021}}
+```
+
+
+
+[template]: img/templates.png "DUCKRABBIT Pattern Template"
 
