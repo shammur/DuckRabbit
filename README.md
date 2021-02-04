@@ -3,7 +3,8 @@ A dataset to study
 
 <dl>
 <dt>
-<block ID='except-dogs' invert-odd>
+```xml
+  <block ID='except-dogs' invert-odd>
 I like [ huskies bobtails bulldogs beagles ] , except  [ cats hamsters parrots birds ] . @@3@@
   
 I like [ cats hamsters parrots birds ] , except  [ huskies bobtails bulldogs beagles ] . @@4@@
@@ -20,5 +21,6 @@ I like [ vegetables meat potatoes pancakes ] , and [ apples peaches lemons orang
 I like [ apples peaches lemons oranges ] , and [ fruits fruits fruits fruits ] too . @@2@@
 I like [ fruits fruits fruits fruits ] , and [ apples peaches lemons oranges ] too . @@1@@
 </block>
+```
 </dt>
 </dl>
