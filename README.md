@@ -12,7 +12,8 @@ We then collected 4 hyponym per domain, for example: rain -- e.g. drizzle, downp
 
 
 Below is a snippet from the template file (except with noun-dog and andtoo with fruits as noun) used to generate the DUCKRABBIT datasets. 
-The markers @@1@@, @@2@@, @@3@@-@@4@@ corresponds to $>$, $<$ and \Disj, where as @@5@@ marks the presupposition/acceptable cases by the taxonomy. Upon acceptance, we will release the templates, scripts to extend and manually checked annotation files.
+The markers @@1@@, @@2@@, @@3@@-@@4@@ corresponds to  and <img src="https://render.githubusercontent.com/render/math?math=\Disj>
+, where as @@5@@ marks the presupposition/acceptable cases by the taxonomy. Upon acceptance, we will release the templates, scripts to extend and manually checked annotation files.
 
 
 
