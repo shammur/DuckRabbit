@@ -57,6 +57,10 @@ Title = {On the Taxonomic Pitfalls of Transformer Networks},
 Year = {2021}}
 ```
 
+* Dedication:
+
+This dataset is respectfully dedicated to [https://en.wikipedia.org/wiki/Amy_Krouse_Rosenthal]_Amy Krouse Rosenthal_, for inspiring us with her amazing writings and her creation "Duck! Rabbit!".
+
 
 
 [template]: img/templates.png "DUCKRABBIT Pattern Template"
