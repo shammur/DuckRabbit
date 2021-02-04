@@ -1,0 +1,1499 @@
+<header='ID:|BLOCK|Num-in-Block|Sentence:|Original:|@@1@@|@@2@@|@@3@@|@@4@@|@@5@@|'>
+# revised templates for the DuckRabbit dataset.
+# @@1@@ = subs - superset
+# @@2@@ = supers - subset
+# @@3@@ = no-relation
+# @@4@@ = no-relation (inverted w.r.t. @@3@@)
+# @@5@@ = Grammatical
+# The type of constructions involved are to be found inside the ID name. Look for the substrings "except-" "particular-" "generally-"
+# "andtoo-", "prefer-", "comparatives-" "drather-". The substring "-name" identifies cases where one of the elements of
+# comparison is a proper name, which might trigger odd or unpredictable effects (handle with care)  
+#
+<block ID='except-dogs' invert-odd>
+I like [ huskies bobtails bulldogs beagles ] , except  [ cats hamsters parrots birds ] . @@3@@
+I like [ cats hamsters parrots birds ] , except  [ huskies bobtails bulldogs beagles ] . @@4@@
+I like [ huskies bobtails bulldogs beagles ] , except  [ dogs dogs dogs dogs ] . @@2@@
+I like [ dogs dogs dogs dogs ] , except  [ huskies bobtails bulldogs beagles ] . @@1@@ @@5@@
+</block>
+<block ID='except-birds' invert-odd>
+I like [ parrots ducks blackbirds sparrows ] , except  [ cats hamsters pigs dogs ] . @@3@@
+I like [ cats hamsters pigs dogs ] , except  [ parrots ducks blackbirds sparrows ] . @@4@@
+I like [ parrots ducks blackbirds sparrows ] , except  [ birds birds birds birds ] . @@2@@
+I like [ birds birds birds birds ] , except  [ parrots ducks blackbirds sparrows ] . @@1@@ @@5@@
+</block>
+<block ID='except-mammals' invert-odd>
+I like [ cats dogs horses cows ] , except  [ reptiles birds insects frogs ] . @@3@@
+I like [ reptiles birds insects frogs ] , except  [ cats dogs horses cows ] . @@4@@
+I like [ cats dogs horses cows ] , except  [ mammals mammals mammals mammals ] . @@2@@
+I like [ mammals mammals mammals mammals ] , except  [ cats dogs horses cows ] . @@1@@ @@5@@
+</block>
+<block ID='except-cars' invert-odd>
+I like [ Volvos Skodas Ferraris Fords ] , except  [ motorcycles bicycles trains airplanes ] . @@3@@
+I like [ motorcycles bicycles trains planes ] , except  [ Volvos Skodas Ferraris Fords ] . @@4@@
+I like [ Volvos Skodas Ferraris Fords ] , except  [ cars cars cars cars ] . @@2@@
+I like [ cars cars cars cars ] , except  [ Volvos Skodas Ferraris Fords ]  . @@1@@ @@5@@
+</block>
+<block ID='except-motorcycles' invert-odd>
+I like [ Harley-Davidson Suzukis enduros Kawasakis ] , except  [ cars bicycles trains airplanes ] . @@3@@
+I like [ cars bicycles trains planes ] , except  [ Harley-Davidson Suzukis enduros Kawasakis ] . @@4@@
+I like [ Harley-Davidson Suzukis enduros Kawasakis ] , except  [ motorcycles motorcycles motorcycles motorcycles ] . @@2@@
+I like [ motorcycles motorcycles motorcycles motorcycles ] , except  [ Harley-Davidson Suzukis enduros Kawasakis ] . @@1@@ @@5@@
+</block>
+<block ID='except-cutlery' invert-odd>
+I like [ forks spoons knives ] , except  [ plates glasses pitchers ] . @@3@@
+I like [ plates glasses pitchers ] , except  [ forks spoons knives ] . @@4@@
+I like [ forks spoons knives ] , except  [ cutlery cutlery cutlery  ] . @@2@@
+I like [ cutlery cutlery cutlery ] , except  [ forks spoons knives ] . @@1@@ @@5@@
+</block>
+<block ID='except-jewelry' invert-odd>
+I like [ shirts trousers socks jeans ] , except  [ dogs jewelry traveling naturism ] . @@3@@
+I like [ dogs jewelry traveling naturism ] , except  [ shirts trousers socks jeans ] . @@4@@
+I like [ shirts trousers socks jeans ] , except  [ clothes clothes clothes clothes ] . @@2@@
+I like [ clothes clothes clothes clothes ] , except  [ shirts trousers socks jeans ] . @@1@@ @@5@@
+</block>
+<block ID='except-cities-name' invert-odd>
+I like [ London Rome Paris Amsterdam ] , except  [ towns villages settlements camps ] . @@3@@
+I like [ towns villages settlements camps ] , except  [ London Rome Paris Amsterdam ] . @@4@@
+I like [ London Rome Paris Amsterdam ] , except  [ cities cities cities cities ] . @@2@@
+I like [ cities cities cities cities ] , except  [ London Rome Paris Amsterdam ] . @@1@@ @@5@@
+</block>
+<block ID='except-birds' invert-odd>
+I like [ oaks birches firs pines ] , except  [ grass animals bushes shrubs ] . @@3@@
+I like [ grass animals bushes shrubs ] , except  [ oaks birches firs pines ] . @@4@@
+I like [ oaks birches firs pines ] , except  [ trees trees trees trees ] . @@2@@
+I like [ trees trees trees trees ] , except  [ oaks birches firs pines ] . @@1@@ @@5@@
+</block>
+<block ID='except-plastics' invert-odd>
+I like [ polyester nylon vinyl PVC ] , except  [ wood cotton glass leather ] . @@3@@
+I like [ wood cotton glass leather ] , except  [ polyester nylon vinyl PVC ] . @@4@@
+I like [ polyester nylon vinyl PVC ] , except  [ plastic plastic plastic plastic ] . @@2@@
+I like [ plastic plastic plastic plastic ] , except  [ polyester nylon vinyl PVC ] . @@1@@ @@5@@
+</block>
+<block ID='except-furniture' invert-odd>
+I like [ chairs tables wardrobes beds ] , except  [ cutlery paintings carpeting minimalism ] . @@3@@
+I like [ cutlery paintings carpeting minimalism ] , except  [ chairs tables wardrobes beds ] . @@4@@
+I like [ chairs tables wardrobes beds ] , except  [ furniture furniture furniture furniture ] . @@2@@
+I like [ furniture furniture furniture furniture ] , except  [ chairs tables wardrobes beds ] . @@1@@ @@5@@
+</block>
+<block ID='except-wines-name' invert-odd>
+I like [ Merlot Chardonnay Chianti Zinfandel ] , except  [ coca-cola water sprite beer ] . @@3@@
+I like [ coca-cola water sprite beer ] , except  [ Merlot Chardonnay Chianti Zinfandel ] . @@4@@
+I like [ Merlot Chardonnay Chianti Zinfandel ] , except  [ wine wine wine wine ] . @@2@@
+I like [ wine wine wine wine ] , except  [ Merlot Chardonnay Chianti Zinfandel ] . @@1@@ @@5@@
+</block>
+<block ID='except-animals' invert-odd>
+I like [ cats dogs hamsters birds ] , except  [ cars food humans objects ] . @@3@@
+I like [ cars food humans objects ] , except  [ cats dogs hamsters birds ] . @@4@@
+I like [ cats dogs hamsters birds ] , except  [ animals animals animals animals ] . @@2@@
+I like [ animals animals animals animals ] , except  [ cats dogs hamsters birds ] . @@1@@ @@5@@
+</block>
+<block ID='except-sports' invert-odd>
+I like [ football basketball badminton running ] , except  [ music gaming shopping eating ] . @@3@@
+I like [ music gaming shopping eating ] , except  [ football basketball badminton running ] . @@4@@
+I like [ football basketball badminton running ] , except  [ sports sports sports sports ] . @@2@@
+I like [ sports sports sports sports ] , except  [ football basketball badminton running ] . @@1@@ @@5@@
+</block>
+<block ID='except-music' invert-odd>
+I like [ pop rock jazz techno folk ] , except  [ sports gaming eating partying ] . @@3@@
+I like [ sports gaming eating partying ] , except  [ pop rock jazz techno folk ] . @@4@@
+I like [ pop rock jazz techno folk ] , except  [ music music music music ] . @@2@@
+I like [ music music music music ] , except  [ pop rock jazz techno folk ] . @@1@@ @@5@@
+</block>
+<block ID='except-vegetables' invert-odd>
+I like [ carrots eggplants cauliflowers tomatoes ] , except  [ meat fruits potatoes pancakes ] . @@3@@
+I like [ meat fruits potatoes pancakes ] , except  [ carrots eggplants cauliflowers tomatoes ] . @@4@@
+I like [ carrots eggplants cauliflowers tomatoes ] , except  [ vegetables vegetables vegetables vegetables ] . @@2@@
+I like [ vegetables vegetables vegetables vegetables ] , except  [ carrots eggplants cauliflowers tomatoes ] . @@1@@ @@5@@
+</block>
+<block ID='except-fruits' invert-odd>
+I like [ apples peaches lemons oranges ] , except  [ vegetables meat potatoes pancakes ] . @@3@@
+I like [ vegetables meat potatoes pancakes ] , except  [ apples peaches lemons oranges ] . @@4@@
+I like [ apples peaches lemons oranges ] , except  [ fruits fruits fruits fruits ] . @@2@@
+I like [ fruits fruits fruits fruits ] , except  [ apples peaches lemons oranges ] . @@1@@ @@5@@
+</block>
+<block ID='except-pork' invert-odd>
+I like [ ham prosciutto bacon lard ] , except  [ fish vegetables poultry beef ] . @@3@@
+I like [ fish vegetables poultry beef ] , except  [ ham prosciutto bacon lard ] . @@4@@
+I like [ ham prosciutto bacon lard ] , except  [ pork pork pork pork ] . @@2@@
+I like [ pork pork pork pork ] , except  [ ham prosciutto bacon lard ] . @@1@@ @@5@@
+</block>
+<block ID='except-desserts' invert-odd>
+I like [ tiramisu pastries ice-cream cheesecake ] , except  [ salads pasta fruits vegetables ] . @@3@@
+I like [ salads pasta fruits vegetables ] , except  [ tiramisu pastries ice-cream cheesecake ] . @@4@@
+I like [ tiramisu pastries ice-cream cheesecake ] , except  [ desserts desserts desserts desserts ] . @@2@@
+I like [ desserts desserts desserts desserts ] , except  [ tiramisu pastries ice-cream cheesecake ] . @@1@@ @@5@@
+</block>
+<block ID='except-seafood' invert-odd>
+I like [ salmon crabs oysters caviar ] , except  [ chicken meat poultry beef ] . @@3@@
+I like [ chicken meat poultry beef ] , except  [ salmon crabs oysters caviar ] . @@4@@
+I like [ salmon crabs oysters caviar ] , except  [ seafood seafood seafood seafood ] . @@2@@
+I like [ seafood seafood seafood seafood ] , except  [ salmon crabs oysters caviar ] . @@1@@ @@5@@
+</block>
+<block ID='except-apartment' invert-odd>
+I like [ lofts penthouses condos studios ] , except  [ farms villas bungalows cottages ] . @@3@@
+I like [ farms villas bungalows cottages ] , except  [ lofts penthouses condos studios ] . @@4@@
+I like [ lofts penthouses condos studios ] , except  [ apartments apartments apartments apartments ] . @@2@@
+I like [ apartments apartments apartments apartments ] , except  [ lofts penthouses condos studios ] . @@1@@ @@5@@
+</block>
+<block ID='except-movies' invert-odd>
+I like [ thrillers westerns comedies documentaries ] , except  [ essays textbooks games reading ] . @@3@@
+I like [ essays textbooks games reading ] , except  [ thrillers westerns comedies documentaries ] . @@4@@
+I like [ thrillers westerns comedies documentaries ] , except  [ movies movies movies movies ] . @@2@@
+I like [ movies movies movies movies ] , except  [ thrillers westerns comedies documentaries ] . @@1@@ @@5@@
+</block>
+<block ID='except-jewelry' invert-odd>
+I like [ bracelets necklaces earrings rings ] , except  [ handbags scarfs glasses shoes ] . @@3@@
+I like [ handbags scarfs glasses shoes ] , except  [ bracelets necklaces earrings rings ] . @@4@@
+I like [ bracelets necklaces earrings rings ] , except  [ jewelry jewelry jewelry jewelry ] . @@2@@
+I like [ jewelry jewelry jewelry jewelry ] , except  [ bracelets necklaces earrings rings ] . @@1@@ @@5@@
+</block>
+<block ID='except-pets' invert-odd>
+I like [ cats dogs rabbits hamsters ] , except  [ tigers bears lions whales ] . @@3@@
+I like [ tigers bears lions whales ] , except  [ cats dogs rabbits hamsters ] . @@4@@
+I like [ cats dogs rabbits hamsters ] , except  [ pets pets pets pets ] . @@2@@
+I like [ pets pets pets pets ] , except  [ cats dogs rabbits hamsters ] . @@1@@ @@5@@
+</block>
+<block ID='except-rain' invert-odd>
+I like [ drizzle rainstorms showers downpours ] , except  [ sunshine snow fog mist ] . @@3@@
+I like [ sunshine snow fog mist ] , except  [ drizzle rainstorms showers downpours ] . @@4@@
+I like [ drizzle rainstorms showers downpours ] , except  [ rain rain rain rain ] . @@2@@
+I like [ rain rain rain rain ] , except  [ drizzle rainstorms showers downpours ] . @@1@@ @@5@@
+</block>
+<block ID='except-nature' invert-odd>
+I like [ mountains forests lakes marshes ] , except  [ cities malls houses concrete ] . @@3@@
+I like [ cities malls houses concrete ] , except  [ mountains forests lakes marshes ] . @@4@@
+I like [ mountains forests lakes marshes ] , except  [ nature nature nature nature ] . @@2@@
+I like [ nature nature nature nature ] , except [ mountains forests lakes marshes ] . @@1@@ @@5@@
+</block>
+<block ID='except-senses' invert-odd>
+He uses [ sight hearing touch taste ] , except  [ rumors reports reconstructions guesses ] . @@3@@
+He uses [ rumors reports reconstructions guesses ] , except  [ sight hearing touch taste ] . @@4@@
+He uses [ sight hearing touch taste ] , except  [ senses senses senses senses ] . @@2@@
+He uses [ senses senses senses senses ] , except [ sight hearing touch taste ] . @@1@@ @@5@@
+</block>
+<block ID='except-emotions' invert-odd>
+He likes [ joy fear love sadness ] , except  [ wisdom stupidity bravery wickedness ] . @@3@@
+He likes [ wisdom stupidity bravery wickedness ] , except  [ joy fear love sadness ] . @@4@@
+He likes [ joy fear love sadness ] , except  [ emotions emotions emotions emotions ] . @@2@@
+He likes [ emotions emotions emotions emotions ] , except [ joy fear love sadness ] . @@1@@ @@5@@
+</block>
+<block ID='except-books' invert-odd>
+I like [ textbooks essays novels biographies ] , except  [ musics films cartoons paintings ] . @@3@@
+I like [ musics films cartoons paintings ] , except  [ textbooks essays novels biographies ] . @@4@@
+I like [ textbooks essays novels biographies ] , except  [ books books books books ] . @@2@@
+I like [ books books books books ] , except [ textbooks essays novels biographies ] . @@1@@ @@5@@
+</block>
+<block ID='except-workers' invert-odd>
+I like [ clerks waiters caretakers teachers ] , except  [ factories restaurants schools offices ] . @@3@@
+I like [ factories restaurants schools offices ] , except  [ clerks waiters caretakers teachers ] . @@4@@
+I like [ clerks waiters caretakers teachers ] , except  [ workers workers workers workers ] . @@2@@
+I like [ workers workers workers workers ] , except [ clerks waiters caretakers teachers ] . @@1@@ @@5@@
+</block>
+<block ID='except-scientists' invert-odd>
+I like [ biologists geneticists astronomers physicists ] , except  [ clerks waiters caretakers janitors ] . @@3@@
+I like [ clerks waiters caretakers janitors ] , except  [ biologists geneticists astronomers physicists ] . @@4@@
+I like [ biologists geneticists astronomers physicists ] , except  [ scientists scientists scientists scientists ] . @@2@@
+I like [ scientists scientists scientists scientists ] , except [ biologists geneticists astronomers physicists ] . @@1@@ @@5@@
+</block>
+<block ID='except-countries-name' invert-odd>
+I study [ Italy Spain Germany France ] , except  [ continents planets oceans hemispheres ] . @@3@@
+I study [ continents planets oceans hemispheres ] , except  [ Italy Spain Germany France ] . @@4@@
+I study [ Italy Spain Germany France ] , except  [ countries countries countries countries ] . @@2@@
+I study [ countries countries countries countries ] , except  [ Italy Spain Germany France ] . @@1@@ @@5@@
+</block>
+<block ID='except-painters-name' invert-odd>
+I like [ Picasso Rembrandt Matisse Caravaggio ] , except  [ clerks waiters caretakers teachers ] . @@3@@
+I like [ clerks waiters caretakers teachers ] , except  [ Picasso Rembrandt Matisse Caravaggio ] . @@4@@
+I like [ Picasso Rembrandt Matisse Caravaggio ] , except  [ painters painters painters painters ] . @@2@@
+I like [ painters painters painters painters  ] , except  [ Picasso Rembrandt Matisse Caravaggio ] . @@1@@ @@5@@
+</block>
+<block ID='except-politicians-name' invert-odd>
+I like [ Churchill Obama Lincoln Merkel ] , except  [ waiters caretakers drivers farmers ] . @@3@@
+I like [ waiters caretakers drivers farmers ] , except  [ Churchill Obama Lincoln Merkel ] . @@4@@
+I like [ Churchill Obama Lincoln Merkel ] , except  [ politicians politicians politicians politicians  ] . @@2@@
+I like [ politicians politicians politicians politicians  ] , except  [ Churchill Obama Lincoln Merkel ] . @@1@@ @@5@@
+</block>
+<block ID='except-actors-name' invert-odd>
+I like [ Jack_Nicholson Morgan_Freeman Harrison_Ford Sean_Connery ] , except  [ mothers girls women ladies ] . @@3@@
+I like [ mothers girls women ladies ] , except  [ Jack_Nicholson Morgan_Freeman Harrison_Ford Sean_Connery ] . @@4@@
+I like [ Jack_Nicholson Morgan_Freeman Harrison_Ford Sean_Connery ] , except  [ actors actors actors actors ] . @@2@@
+I like [ actors actors actors actors ] , except  [ Jack_Nicholson Morgan_Freeman Harrison_Ford Sean_Connery ] . @@1@@ @@5@@
+</block>
+#
+########################################## in particular ##########################################
+#
+<block ID='particular-dogs' invert-odd>
+I like [ huskies bobtails bulldogs beagles ] , and_in_particular  [ cats hamsters parrots birds ] . @@3@@
+I like [ cats hamsters parrots birds ] , and_in_particular  [ huskies bobtails bulldogs beagles ] . @@4@@
+I like [ huskies bobtails bulldogs beagles ] , and_in_particular  [ dogs dogs dogs dogs ] . @@2@@
+I like [ dogs dogs dogs dogs ] , and_in_particular  [ huskies bobtails bulldogs beagles ] . @@1@@ @@5@@
+</block>
+<block ID='particular-birds' invert-odd>
+I like [ parrots ducks blackbirds sparrows ] , and_in_particular  [ cats hamsters pigs dogs ] . @@3@@
+I like [ cats hamsters pigs dogs ] , and_in_particular  [ parrots ducks blackbirds sparrows ] . @@4@@
+I like [ parrots ducks blackbirds sparrows ] , and_in_particular  [ birds birds birds birds ] . @@2@@
+I like [ birds birds birds birds ] , and_in_particular  [ parrots ducks blackbirds sparrows ] . @@1@@ @@5@@
+</block>
+<block ID='particular-mammals' invert-odd>
+I like [ cats dogs horses cows ] , and_in_particular  [ reptiles birds insects frogs ] . @@3@@
+I like [ reptiles birds insects frogs ] , and_in_particular  [ cats dogs horses cows ] . @@4@@
+I like [ cats dogs horses cows ] , and_in_particular  [ mammals mammals mammals mammals ] . @@2@@
+I like [ mammals mammals mammals mammals ] , and_in_particular  [ cats dogs horses cows ] . @@1@@ @@5@@
+</block>
+<block ID='particular-cars' invert-odd>
+I like [ Volvos Skodas Ferraris Fords ] , and_in_particular  [ motorcycles bicycles trains airplanes ] . @@3@@
+I like [ motorcycles bicycles trains planes ] , and_in_particular  [ Volvos Skodas Ferraris Fords ] . @@4@@
+I like [ Volvos Skodas Ferraris Fords ] , and_in_particular  [ cars cars cars cars ] . @@2@@
+I like [ cars cars cars cars ] , and_in_particular  [ Volvos Skodas Ferraris Fords ]  . @@1@@ @@5@@
+</block>
+<block ID='particular-motorcycles' invert-odd>
+I like [ Harley-Davidson Suzukis enduros Kawasakis ] , and_in_particular  [ cars bicycles trains airplanes ] . @@3@@
+I like [ cars bicycles trains planes ] , and_in_particular  [ Harley-Davidson Suzukis enduros Kawasakis ] . @@4@@
+I like [ Harley-Davidson Suzukis enduros Kawasakis ] , and_in_particular  [ motorcycles motorcycles motorcycles motorcycles ] . @@2@@
+I like [ motorcycles motorcycles motorcycles motorcycles ] , and_in_particular  [ Harley-Davidson Suzukis enduros Kawasakis ] . @@1@@ @@5@@
+</block>
+<block ID='particular-cutlery' invert-odd>
+I like [ forks spoons knives ] , and_in_particular  [ plates glasses pitchers ] . @@3@@
+I like [ plates glasses pitchers ] , and_in_particular  [ forks spoons knives ] . @@4@@
+I like [ forks spoons knives ] , and_in_particular  [ cutlery cutlery cutlery  ] . @@2@@
+I like [ cutlery cutlery cutlery ] , and_in_particular  [ forks spoons knives ] . @@1@@ @@5@@
+</block>
+<block ID='particular-jewelry' invert-odd>
+I like [ shirts trousers socks jeans ] , and_in_particular  [ dogs jewelry traveling naturism ] . @@3@@
+I like [ dogs jewelry traveling naturism ] , and_in_particular  [ shirts trousers socks jeans ] . @@4@@
+I like [ shirts trousers socks jeans ] , and_in_particular  [ clothes clothes clothes clothes ] . @@2@@
+I like [ clothes clothes clothes clothes ] , and_in_particular  [ shirts trousers socks jeans ] . @@1@@ @@5@@
+</block>
+<block ID='particular-cities-name' invert-odd>
+I like [ London Rome Paris Amsterdam ] , and_in_particular  [ towns villages settlements camps ] . @@3@@
+I like [ towns villages settlements camps ] , and_in_particular  [ London Rome Paris Amsterdam ] . @@4@@
+I like [ London Rome Paris Amsterdam ] , and_in_particular  [ cities cities cities cities ] . @@2@@
+I like [ cities cities cities cities ] , and_in_particular  [ London Rome Paris Amsterdam ] . @@1@@ @@5@@
+</block>
+<block ID='particular-birds' invert-odd>
+I like [ oaks birches firs pines ] , and_in_particular  [ grass animals bushes shrubs ] . @@3@@
+I like [ grass animals bushes shrubs ] , and_in_particular  [ oaks birches firs pines ] . @@4@@
+I like [ oaks birches firs pines ] , and_in_particular  [ trees trees trees trees ] . @@2@@
+I like [ trees trees trees trees ] , and_in_particular  [ oaks birches firs pines ] . @@1@@ @@5@@
+</block>
+<block ID='particular-plastics' invert-odd>
+I like [ polyester nylon vinyl PVC ] , and_in_particular  [ wood cotton glass leather ] . @@3@@
+I like [ wood cotton glass leather ] , and_in_particular  [ polyester nylon vinyl PVC ] . @@4@@
+I like [ polyester nylon vinyl PVC ] , and_in_particular  [ plastic plastic plastic plastic ] . @@2@@
+I like [ plastic plastic plastic plastic ] , and_in_particular  [ polyester nylon vinyl PVC ] . @@1@@ @@5@@
+</block>
+<block ID='particular-furniture' invert-odd>
+I like [ chairs tables wardrobes beds ] , and_in_particular  [ cutlery paintings carpeting minimalism ] . @@3@@
+I like [ cutlery paintings carpeting minimalism ] , and_in_particular  [ chairs tables wardrobes beds ] . @@4@@
+I like [ chairs tables wardrobes beds ] , and_in_particular  [ furniture furniture furniture furniture ] . @@2@@
+I like [ furniture furniture furniture furniture ] , and_in_particular  [ chairs tables wardrobes beds ] . @@1@@ @@5@@
+</block>
+<block ID='particular-wines-name' invert-odd>
+I like [ Merlot Chardonnay Chianti Zinfandel ] , and_in_particular  [ coca-cola water sprite beer ] . @@3@@
+I like [ coca-cola water sprite beer ] , and_in_particular  [ Merlot Chardonnay Chianti Zinfandel ] . @@4@@
+I like [ Merlot Chardonnay Chianti Zinfandel ] , and_in_particular  [ wine wine wine wine ] . @@2@@
+I like [ wine wine wine wine ] , and_in_particular  [ Merlot Chardonnay Chianti Zinfandel ] . @@1@@ @@5@@
+</block>
+<block ID='particular-animals' invert-odd>
+I like [ cats dogs hamsters birds ] , and_in_particular  [ cars food humans objects ] . @@3@@
+I like [ cars food humans objects ] , and_in_particular  [ cats dogs hamsters birds ] . @@4@@
+I like [ cats dogs hamsters birds ] , and_in_particular  [ animals animals animals animals ] . @@2@@
+I like [ animals animals animals animals ] , and_in_particular  [ cats dogs hamsters birds ] . @@1@@ @@5@@
+</block>
+<block ID='particular-sports' invert-odd>
+I like [ football basketball badminton running ] , and_in_particular  [ music gaming shopping eating ] . @@3@@
+I like [ music gaming shopping eating ] , and_in_particular  [ football basketball badminton running ] . @@4@@
+I like [ football basketball badminton running ] , and_in_particular  [ sports sports sports sports ] . @@2@@
+I like [ sports sports sports sports ] , and_in_particular  [ football basketball badminton running ] . @@1@@ @@5@@
+</block>
+<block ID='particular-music' invert-odd>
+I like [ pop rock jazz techno folk ] , and_in_particular  [ sports gaming eating partying ] . @@3@@
+I like [ sports gaming eating partying ] , and_in_particular  [ pop rock jazz techno folk ] . @@4@@
+I like [ pop rock jazz techno folk ] , and_in_particular  [ music music music music ] . @@2@@
+I like [ music music music music ] , and_in_particular  [ pop rock jazz techno folk ] . @@1@@ @@5@@
+</block>
+<block ID='particular-vegetables' invert-odd>
+I like [ carrots eggplants cauliflowers tomatoes ] , and_in_particular  [ meat fruits potatoes pancakes ] . @@3@@
+I like [ meat fruits potatoes pancakes ] , and_in_particular  [ carrots eggplants cauliflowers tomatoes ] . @@4@@
+I like [ carrots eggplants cauliflowers tomatoes ] , and_in_particular  [ vegetables vegetables vegetables vegetables ] . @@2@@
+I like [ vegetables vegetables vegetables vegetables ] , and_in_particular  [ carrots eggplants cauliflowers tomatoes ] . @@1@@ @@5@@
+</block>
+<block ID='particular-fruits' invert-odd>
+I like [ apples peaches lemons oranges ] , and_in_particular  [ vegetables meat potatoes pancakes ] . @@3@@
+I like [ vegetables meat potatoes pancakes ] , and_in_particular  [ apples peaches lemons oranges ] . @@4@@
+I like [ apples peaches lemons oranges ] , and_in_particular  [ fruits fruits fruits fruits ] . @@2@@
+I like [ fruits fruits fruits fruits ] , and_in_particular  [ apples peaches lemons oranges ] . @@1@@ @@5@@
+</block>
+<block ID='particular-pork' invert-odd>
+I like [ ham prosciutto bacon lard ] , and_in_particular  [ fish vegetables poultry beef ] . @@3@@
+I like [ fish vegetables poultry beef ] , and_in_particular  [ ham prosciutto bacon lard ] . @@4@@
+I like [ ham prosciutto bacon lard ] , and_in_particular  [ pork pork pork pork ] . @@2@@
+I like [ pork pork pork pork ] , and_in_particular  [ ham prosciutto bacon lard ] . @@1@@ @@5@@
+</block>
+<block ID='particular-desserts' invert-odd>
+I like [ tiramisu pastries ice-cream cheesecake ] , and_in_particular  [ salads pasta fruits vegetables ] . @@3@@
+I like [ salads pasta fruits vegetables ] , and_in_particular  [ tiramisu pastries ice-cream cheesecake ] . @@4@@
+I like [ tiramisu pastries ice-cream cheesecake ] , and_in_particular  [ desserts desserts desserts desserts ] . @@2@@
+I like [ desserts desserts desserts desserts ] , and_in_particular  [ tiramisu pastries ice-cream cheesecake ] . @@1@@ @@5@@
+</block>
+<block ID='particular-seafood' invert-odd>
+I like [ salmon crabs oysters caviar ] , and_in_particular  [ chicken meat poultry beef ] . @@3@@
+I like [ chicken meat poultry beef ] , and_in_particular  [ salmon crabs oysters caviar ] . @@4@@
+I like [ salmon crabs oysters caviar ] , and_in_particular  [ seafood seafood seafood seafood ] . @@2@@
+I like [ seafood seafood seafood seafood ] , and_in_particular  [ salmon crabs oysters caviar ] . @@1@@ @@5@@
+</block>
+<block ID='particular-apartment' invert-odd>
+I like [ lofts penthouses condos studios ] , and_in_particular  [ farms villas bungalows cottages ] . @@3@@
+I like [ farms villas bungalows cottages ] , and_in_particular  [ lofts penthouses condos studios ] . @@4@@
+I like [ lofts penthouses condos studios ] , and_in_particular  [ apartments apartments apartments apartments ] . @@2@@
+I like [ apartments apartments apartments apartments ] , and_in_particular  [ lofts penthouses condos studios ] . @@1@@ @@5@@
+</block>
+<block ID='particular-movies' invert-odd>
+I like [ thrillers westerns comedies documentaries ] , and_in_particular  [ essays textbooks games reading ] . @@3@@
+I like [ essays textbooks games reading ] , and_in_particular  [ thrillers westerns comedies documentaries ] . @@4@@
+I like [ thrillers westerns comedies documentaries ] , and_in_particular  [ movies movies movies movies ] . @@2@@
+I like [ movies movies movies movies ] , and_in_particular  [ thrillers westerns comedies documentaries ] . @@1@@ @@5@@
+</block>
+<block ID='particular-jewelry' invert-odd>
+I like [ bracelets necklaces earrings rings ] , and_in_particular  [ handbags scarfs glasses shoes ] . @@3@@
+I like [ handbags scarfs glasses shoes ] , and_in_particular  [ bracelets necklaces earrings rings ] . @@4@@
+I like [ bracelets necklaces earrings rings ] , and_in_particular  [ jewelry jewelry jewelry jewelry ] . @@2@@
+I like [ jewelry jewelry jewelry jewelry ] , and_in_particular  [ bracelets necklaces earrings rings ] . @@1@@ @@5@@
+</block>
+<block ID='particular-pets' invert-odd>
+I like [ cats dogs rabbits hamsters ] , and_in_particular  [ tigers bears lions whales ] . @@3@@
+I like [ tigers bears lions whales ] , and_in_particular  [ cats dogs rabbits hamsters ] . @@4@@
+I like [ cats dogs rabbits hamsters ] , and_in_particular  [ pets pets pets pets ] . @@2@@
+I like [ pets pets pets pets ] , and_in_particular  [ cats dogs rabbits hamsters ] . @@1@@ @@5@@
+</block>
+<block ID='particular-rain' invert-odd>
+I like [ drizzle rainstorms showers downpours ] , and_in_particular  [ sunshine snow fog mist ] . @@3@@
+I like [ sunshine snow fog mist ] , and_in_particular  [ drizzle rainstorms showers downpours ] . @@4@@
+I like [ drizzle rainstorms showers downpours ] , and_in_particular  [ rain rain rain rain ] . @@2@@
+I like [ rain rain rain rain ] , and_in_particular  [ drizzle rainstorms showers downpours ] . @@1@@ @@5@@
+</block>
+<block ID='particular-nature' invert-odd>
+I like [ mountains forests lakes marshes ] , and_in_particular  [ cities malls houses concrete ] . @@3@@
+I like [ cities malls houses concrete ] , and_in_particular  [ mountains forests lakes marshes ] . @@4@@
+I like [ mountains forests lakes marshes ] , and_in_particular  [ nature nature nature nature ] . @@2@@
+I like [ nature nature nature nature ] , and_in_particular [ mountains forests lakes marshes ] . @@1@@ @@5@@
+</block>
+<block ID='particular-senses' invert-odd>
+He uses [ sight hearing touch taste ] , and_in_particular  [ rumors reports reconstructions guesses ] . @@3@@
+He uses [ rumors reports reconstructions guesses ] , and_in_particular  [ sight hearing touch taste ] . @@4@@
+He uses [ sight hearing touch taste ] , and_in_particular  [ senses senses senses senses ] . @@2@@
+He uses [ senses senses senses senses ] , and_in_particular [ sight hearing touch taste ] . @@1@@ @@5@@
+</block>
+<block ID='particular-emotions' invert-odd>
+He likes [ joy fear love sadness ] , and_in_particular  [ wisdom stupidity bravery wickedness ] . @@3@@
+He likes [ wisdom stupidity bravery wickedness ] , and_in_particular  [ joy fear love sadness ] . @@4@@
+He likes [ joy fear love sadness ] , and_in_particular  [ emotions emotions emotions emotions ] . @@2@@
+He likes [ emotions emotions emotions emotions ] , and_in_particular [ joy fear love sadness ] . @@1@@ @@5@@
+</block>
+<block ID='particular-books' invert-odd>
+I like [ textbooks essays novels biographies ] , and_in_particular  [ musics films cartoons paintings ] . @@3@@
+I like [ musics films cartoons paintings ] , and_in_particular  [ textbooks essays novels biographies ] . @@4@@
+I like [ textbooks essays novels biographies ] , and_in_particular  [ books books books books ] . @@2@@
+I like [ books books books books ] , and_in_particular [ textbooks essays novels biographies ] . @@1@@ @@5@@
+</block>
+<block ID='particular-workers' invert-odd>
+I like [ clerks waiters caretakers teachers ] , and_in_particular  [ factories restaurants schools offices ] . @@3@@
+I like [ factories restaurants schools offices ] , and_in_particular  [ clerks waiters caretakers teachers ] . @@4@@
+I like [ clerks waiters caretakers teachers ] , and_in_particular  [ workers workers workers workers ] . @@2@@
+I like [ workers workers workers workers ] , and_in_particular [ clerks waiters caretakers teachers ] . @@1@@ @@5@@
+</block>
+<block ID='particular-scientists' invert-odd>
+I like [ biologists geneticists astronomers physicists ] , and_in_particular  [ clerks waiters caretakers janitors ] . @@3@@
+I like [ clerks waiters caretakers janitors ] , and_in_particular  [ biologists geneticists astronomers physicists ] . @@4@@
+I like [ biologists geneticists astronomers physicists ] , and_in_particular  [ scientists scientists scientists scientists ] . @@2@@
+I like [ scientists scientists scientists scientists ] , and_in_particular [ biologists geneticists astronomers physicists ] . @@1@@ @@5@@
+</block>
+<block ID='particular-countries-name' invert-odd>
+I study [ Italy Spain Germany France ] , and_in_particular  [ continents planets oceans hemispheres ] . @@3@@
+I study [ continents planets oceans hemispheres ] , and_in_particular  [ Italy Spain Germany France ] . @@4@@
+I study [ Italy Spain Germany France ] , and_in_particular  [ countries countries countries countries ] . @@2@@
+I study [ countries countries countries countries ] , and_in_particular  [ Italy Spain Germany France ] . @@1@@ @@5@@
+</block>
+<block ID='particular-painters-name' invert-odd>
+I like [ Picasso Rembrandt Matisse Caravaggio ] , and_in_particular  [ clerks waiters caretakers teachers ] . @@3@@
+I like [ clerks waiters caretakers teachers ] , and_in_particular  [ Picasso Rembrandt Matisse Caravaggio ] . @@4@@
+I like [ Picasso Rembrandt Matisse Caravaggio ] , and_in_particular  [ painters painters painters painters ] . @@2@@
+I like [ painters painters painters painters  ] , and_in_particular  [ Picasso Rembrandt Matisse Caravaggio ] . @@1@@ @@5@@
+</block>
+<block ID='particular-politicians-name' invert-odd>
+I like [ Churchill Obama Lincoln Merkel ] , and_in_particular  [ waiters caretakers drivers farmers ] . @@3@@
+I like [ waiters caretakers drivers farmers ] , and_in_particular  [ Churchill Obama Lincoln Merkel ] . @@4@@
+I like [ Churchill Obama Lincoln Merkel ] , and_in_particular  [ politicians politicians politicians politicians  ] . @@2@@
+I like [ politicians politicians politicians politicians  ] , and_in_particular  [ Churchill Obama Lincoln Merkel ] . @@1@@ @@5@@
+</block>
+<block ID='particular-actors-name' invert-odd>
+I like [ Jack_Nicholson Morgan_Freeman Harrison_Ford Sean_Connery ] , and_in_particular  [ mothers girls women ladies ] . @@3@@
+I like [ mothers girls women ladies ] , and_in_particular  [ Jack_Nicholson Morgan_Freeman Harrison_Ford Sean_Connery ] . @@4@@
+I like [ Jack_Nicholson Morgan_Freeman Harrison_Ford Sean_Connery ] , and_in_particular  [ actors actors actors actors ] . @@2@@
+I like [ actors actors actors actors ] , and_in_particular [ Jack_Nicholson Morgan_Freeman Harrison_Ford Sean_Connery ] . @@1@@ @@5@@
+</block>
+#
+########################################## more generally  ##########################################
+#
+<block ID='generally-dogs' invert-odd>
+I like [ huskies bobtails bulldogs beagles ] , and_more_generally  [ cats hamsters parrots birds ] . @@3@@
+I like [ cats hamsters parrots birds ] , and_more_generally  [ huskies bobtails bulldogs beagles ] . @@4@@
+I like [ huskies bobtails bulldogs beagles ] , and_more_generally  [ dogs dogs dogs dogs ] . @@2@@ @@5@@
+I like [ dogs dogs dogs dogs ] , and_more_generally  [ huskies bobtails bulldogs beagles ] . @@1@@
+</block>
+<block ID='generally-birds' invert-odd>
+I like [ parrots ducks blackbirds sparrows ] , and_more_generally  [ cats hamsters pigs dogs ] . @@3@@
+I like [ cats hamsters pigs dogs ] , and_more_generally  [ parrots ducks blackbirds sparrows ] . @@4@@
+I like [ parrots ducks blackbirds sparrows ] , and_more_generally  [ birds birds birds birds ] . @@2@@ @@5@@
+I like [ birds birds birds birds ] , and_more_generally  [ parrots ducks blackbirds sparrows ] . @@1@@
+</block>
+<block ID='generally-mammals' invert-odd>
+I like [ cats dogs horses cows ] , and_more_generally  [ reptiles birds insects frogs ] . @@3@@
+I like [ reptiles birds insects frogs ] , and_more_generally  [ cats dogs horses cows ] . @@4@@
+I like [ cats dogs horses cows ] , and_more_generally  [ mammals mammals mammals mammals ] . @@2@@ @@5@@
+I like [ mammals mammals mammals mammals ] , and_more_generally  [ cats dogs horses cows ] . @@1@@
+</block>
+<block ID='generally-cars' invert-odd>
+I like [ Volvos Skodas Ferraris Fords ] , and_more_generally  [ motorcycles bicycles trains airplanes ] . @@3@@
+I like [ motorcycles bicycles trains planes ] , and_more_generally  [ Volvos Skodas Ferraris Fords ] . @@4@@
+I like [ Volvos Skodas Ferraris Fords ] , and_more_generally  [ cars cars cars cars ] . @@2@@ @@5@@
+I like [ cars cars cars cars ] , and_more_generally  [ Volvos Skodas Ferraris Fords ]  . @@1@@
+</block>
+<block ID='generally-motorcycles' invert-odd>
+I like [ Harley-Davidson Suzukis enduros Kawasakis ] , and_more_generally  [ cars bicycles trains airplanes ] . @@3@@
+I like [ cars bicycles trains planes ] , and_more_generally  [ Harley-Davidson Suzukis enduros Kawasakis ] . @@4@@
+I like [ Harley-Davidson Suzukis enduros Kawasakis ] , and_more_generally  [ motorcycles motorcycles motorcycles motorcycles ] . @@2@@ @@5@@
+I like [ motorcycles motorcycles motorcycles motorcycles ] , and_more_generally  [ Harley-Davidson Suzukis enduros Kawasakis ] . @@1@@
+</block>
+<block ID='generally-cutlery' invert-odd>
+I like [ forks spoons knives ] , and_more_generally  [ drapery furniture jewelry ] . @@3@@
+I like [ drapery furniture jewelry ] , and_more_generally  [ forks spoons knives ] . @@4@@
+I like [ forks spoons knives ] , and_more_generally  [ cutlery cutlery cutlery  ] . @@2@@ @@5@@
+I like [ cutlery cutlery cutlery ] , and_more_generally  [ forks spoons knives ] . @@1@@
+</block>
+<block ID='generally-jewelry' invert-odd>
+I like [ shirts trousers socks jeans ] , and_more_generally  [ dogs jewelry traveling naturism ] . @@3@@
+I like [ dogs jewelry traveling naturism ] , and_more_generally  [ shirts trousers socks jeans ] . @@4@@
+I like [ shirts trousers socks jeans ] , and_more_generally  [ clothes clothes clothes clothes ] . @@2@@ @@5@@
+I like [ clothes clothes clothes clothes ] , and_more_generally  [ shirts trousers socks jeans ] . @@1@@
+</block>
+<block ID='generally-cities-name' invert-odd>
+I like [ London Rome Paris Amsterdam ] , and_more_generally  [ towns villages settlements camps ] . @@3@@
+I like [ towns villages settlements camps ] , and_more_generally  [ London Rome Paris Amsterdam ] . @@4@@
+I like [ London Rome Paris Amsterdam ] , and_more_generally  [ cities cities cities cities ] . @@2@@ @@5@@
+I like [ cities cities cities cities ] , and_more_generally  [ London Rome Paris Amsterdam ] . @@1@@
+</block>
+<block ID='generally-birds' invert-odd>
+I like [ oaks birches firs pines ] , and_more_generally  [ grass animals bushes shrubs ] . @@3@@
+I like [ grass animals bushes shrubs ] , and_more_generally  [ oaks birches firs pines ] . @@4@@
+I like [ oaks birches firs pines ] , and_more_generally  [ trees trees trees trees ] . @@2@@ @@5@@
+I like [ trees trees trees trees ] , and_more_generally  [ oaks birches firs pines ] . @@1@@
+</block>
+<block ID='generally-plastics' invert-odd>
+I like [ polyester nylon vinyl PVC ] , and_more_generally  [ wood cotton glass leather ] . @@3@@
+I like [ wood cotton glass leather ] , and_more_generally  [ polyester nylon vinyl PVC ] . @@4@@
+I like [ polyester nylon vinyl PVC ] , and_more_generally  [ plastic plastic plastic plastic ] . @@2@@ @@5@@
+I like [ plastic plastic plastic plastic ] , and_more_generally  [ polyester nylon vinyl PVC ] . @@1@@
+</block>
+<block ID='generally-furniture' invert-odd>
+I like [ chairs tables wardrobes beds ] , and_more_generally  [ cutlery paintings carpeting minimalism ] . @@3@@
+I like [ cutlery paintings carpeting minimalism ] , and_more_generally  [ chairs tables wardrobes beds ] . @@4@@
+I like [ chairs tables wardrobes beds ] , and_more_generally  [ furniture furniture furniture furniture ] . @@2@@ @@5@@
+I like [ furniture furniture furniture furniture ] , and_more_generally  [ chairs tables wardrobes beds ] . @@1@@
+</block>
+<block ID='generally-wines-name' invert-odd>
+I like [ Merlot Chardonnay Chianti Zinfandel ] , and_more_generally  [ coca-cola water sprite beer ] . @@3@@
+I like [ coca-cola water sprite beer ] , and_more_generally  [ Merlot Chardonnay Chianti Zinfandel ] . @@4@@
+I like [ Merlot Chardonnay Chianti Zinfandel ] , and_more_generally  [ wine wine wine wine ] . @@2@@ @@5@@
+I like [ wine wine wine wine ] , and_more_generally  [ Merlot Chardonnay Chianti Zinfandel ] . @@1@@
+</block>
+<block ID='generally-animals' invert-odd>
+I like [ cats dogs hamsters birds ] , and_more_generally  [ cars food humans objects ] . @@3@@
+I like [ cars food humans objects ] , and_more_generally  [ cats dogs hamsters birds ] . @@4@@
+I like [ cats dogs hamsters birds ] , and_more_generally  [ animals animals animals animals ] . @@2@@ @@5@@
+I like [ animals animals animals animals ] , and_more_generally  [ cats dogs hamsters birds ] . @@1@@
+</block>
+<block ID='generally-sports' invert-odd>
+I like [ football basketball badminton running ] , and_more_generally  [ music gaming shopping eating ] . @@3@@
+I like [ music gaming shopping eating ] , and_more_generally  [ football basketball badminton running ] . @@4@@
+I like [ football basketball badminton running ] , and_more_generally  [ sports sports sports sports ] . @@2@@ @@5@@
+I like [ sports sports sports sports ] , and_more_generally  [ football basketball badminton running ] . @@1@@
+</block>
+<block ID='generally-music' invert-odd>
+I like [ pop rock jazz techno folk ] , and_more_generally  [ sports gaming eating partying ] . @@3@@
+I like [ sports gaming eating partying ] , and_more_generally  [ pop rock jazz techno folk ] . @@4@@
+I like [ pop rock jazz techno folk ] , and_more_generally  [ music music music music ] . @@2@@ @@5@@
+I like [ music music music music ] , and_more_generally  [ pop rock jazz techno folk ] . @@1@@
+</block>
+<block ID='generally-vegetables' invert-odd>
+I like [ carrots eggplants cauliflowers tomatoes ] , and_more_generally  [ meat fruits potatoes pancakes ] . @@3@@
+I like [ meat fruits potatoes pancakes ] , and_more_generally  [ carrots eggplants cauliflowers tomatoes ] . @@4@@
+I like [ carrots eggplants cauliflowers tomatoes ] , and_more_generally  [ vegetables vegetables vegetables vegetables ] . @@2@@ @@5@@
+I like [ vegetables vegetables vegetables vegetables ] , and_more_generally  [ carrots eggplants cauliflowers tomatoes ] . @@1@@
+</block>
+<block ID='generally-fruits' invert-odd>
+I like [ apples peaches lemons oranges ] , and_more_generally  [ vegetables meat potatoes pancakes ] . @@3@@
+I like [ vegetables meat potatoes pancakes ] , and_more_generally  [ apples peaches lemons oranges ] . @@4@@
+I like [ apples peaches lemons oranges ] , and_more_generally  [ fruits fruits fruits fruits ] . @@2@@ @@5@@
+I like [ fruits fruits fruits fruits ] , and_more_generally  [ apples peaches lemons oranges ] . @@1@@
+</block>
+<block ID='generally-pork' invert-odd>
+I like [ ham prosciutto bacon lard ] , and_more_generally  [ fish vegetables poultry beef ] . @@3@@
+I like [ fish vegetables poultry beef ] , and_more_generally  [ ham prosciutto bacon lard ] . @@4@@
+I like [ ham prosciutto bacon lard ] , and_more_generally  [ pork pork pork pork ] . @@2@@ @@5@@
+I like [ pork pork pork pork ] , and_more_generally  [ ham prosciutto bacon lard ] . @@1@@
+</block>
+<block ID='generally-desserts' invert-odd>
+I like [ tiramisu pastries ice-cream cheesecake ] , and_more_generally  [ salads pasta fruits vegetables ] . @@3@@
+I like [ salads pasta fruits vegetables ] , and_more_generally  [ tiramisu pastries ice-cream cheesecake ] . @@4@@
+I like [ tiramisu pastries ice-cream cheesecake ] , and_more_generally  [ desserts desserts desserts desserts ] . @@2@@ @@5@@
+I like [ desserts desserts desserts desserts ] , and_more_generally  [ tiramisu pastries ice-cream cheesecake ] . @@1@@
+</block>
+<block ID='generally-seafood' invert-odd>
+I like [ salmon crabs oysters caviar ] , and_more_generally  [ chicken meat poultry beef ] . @@3@@
+I like [ chicken meat poultry beef ] , and_more_generally  [ salmon crabs oysters caviar ] . @@4@@
+I like [ salmon crabs oysters caviar ] , and_more_generally  [ seafood seafood seafood seafood ] . @@2@@ @@5@@
+I like [ seafood seafood seafood seafood ] , and_more_generally  [ salmon crabs oysters caviar ] . @@1@@
+</block>
+<block ID='generally-apartment' invert-odd>
+I like [ lofts penthouses condos studios ] , and_more_generally  [ farms villas bungalows cottages ] . @@3@@
+I like [ farms villas bungalows cottages ] , and_more_generally  [ lofts penthouses condos studios ] . @@4@@
+I like [ lofts penthouses condos studios ] , and_more_generally  [ apartments apartments apartments apartments ] . @@2@@ @@5@@
+I like [ apartments apartments apartments apartments ] , and_more_generally  [ lofts penthouses condos studios ] . @@1@@
+</block>
+<block ID='generally-movies' invert-odd>
+I like [ thrillers westerns comedies documentaries ] , and_more_generally  [ essays textbooks games reading ] . @@3@@
+I like [ essays textbooks games reading ] , and_more_generally  [ thrillers westerns comedies documentaries ] . @@4@@
+I like [ thrillers westerns comedies documentaries ] , and_more_generally  [ movies movies movies movies ] . @@2@@ @@5@@
+I like [ movies movies movies movies ] , and_more_generally  [ thrillers westerns comedies documentaries ] . @@1@@
+</block>
+<block ID='generally-jewelry' invert-odd>
+I like [ bracelets necklaces earrings rings ] , and_more_generally  [ handbags scarfs glasses shoes ] . @@3@@
+I like [ handbags scarfs glasses shoes ] , and_more_generally  [ bracelets necklaces earrings rings ] . @@4@@
+I like [ bracelets necklaces earrings rings ] , and_more_generally  [ jewelry jewelry jewelry jewelry ] . @@2@@ @@5@@
+I like [ jewelry jewelry jewelry jewelry ] , and_more_generally  [ bracelets necklaces earrings rings ] . @@1@@
+</block>
+<block ID='generally-pets' invert-odd>
+I like [ cats dogs rabbits hamsters ] , and_more_generally  [ tigers bears lions whales ] . @@3@@
+I like [ tigers bears lions whales ] , and_more_generally  [ cats dogs rabbits hamsters ] . @@4@@
+I like [ cats dogs rabbits hamsters ] , and_more_generally  [ pets pets pets pets ] . @@2@@ @@5@@
+I like [ pets pets pets pets ] , and_more_generally  [ cats dogs rabbits hamsters ] . @@1@@
+</block>
+<block ID='generally-rain' invert-odd>
+I like [ drizzle rainstorms showers downpours ] , and_more_generally  [ sunshine snow fog mist ] . @@3@@
+I like [ sunshine snow fog mist ] , and_more_generally  [ drizzle rainstorms showers downpours ] . @@4@@
+I like [ drizzle rainstorms showers downpours ] , and_more_generally  [ rain rain rain rain ] . @@2@@ @@5@@
+I like [ rain rain rain rain ] , and_more_generally  [ drizzle rainstorms showers downpours ] . @@1@@
+</block>
+<block ID='generally-nature' invert-odd>
+I like [ mountains forests lakes marshes ] , and_more_generally  [ cities malls houses concrete ] . @@3@@
+I like [ cities malls houses concrete ] , and_more_generally  [ mountains forests lakes marshes ] . @@4@@
+I like [ mountains forests lakes marshes ] , and_more_generally  [ nature nature nature nature ] . @@2@@ @@5@@
+I like [ nature nature nature nature ] , and_more_generally [ mountains forests lakes marshes ] . @@1@@
+</block>
+<block ID='generally-senses' invert-odd>
+He uses [ sight hearing touch taste ] , and_more_generally  [ rumors reports reconstructions guesses ] . @@3@@
+He uses [ rumors reports reconstructions guesses ] , and_more_generally  [ sight hearing touch taste ] . @@4@@
+He uses [ sight hearing touch taste ] , and_more_generally  [ senses senses senses senses ] . @@2@@ @@5@@
+He uses [ senses senses senses senses ] , and_more_generally [ sight hearing touch taste ] . @@1@@
+</block>
+<block ID='generally-emotions' invert-odd>
+He likes [ joy fear love sadness ] , and_more_generally  [ wisdom stupidity bravery wickedness ] . @@3@@
+He likes [ wisdom stupidity bravery wickedness ] , and_more_generally  [ joy fear love sadness ] . @@4@@
+He likes [ joy fear love sadness ] , and_more_generally  [ emotions emotions emotions emotions ] . @@2@@ @@5@@
+He likes [ emotions emotions emotions emotions ] , and_more_generally [ joy fear love sadness ] . @@1@@
+</block>
+<block ID='generally-books' invert-odd>
+I like [ textbooks essays novels biographies ] , and_more_generally  [ musics films cartoons paintings ] . @@3@@
+I like [ musics films cartoons paintings ] , and_more_generally  [ textbooks essays novels biographies ] . @@4@@
+I like [ textbooks essays novels biographies ] , and_more_generally  [ books books books books ] . @@2@@ @@5@@
+I like [ books books books books ] , and_more_generally [ textbooks essays novels biographies ] . @@1@@
+</block>
+<block ID='generally-workers' invert-odd>
+I like [ clerks waiters caretakers teachers ] , and_more_generally  [ factories restaurants schools offices ] . @@3@@
+I like [ factories restaurants schools offices ] , and_more_generally  [ clerks waiters caretakers teachers ] . @@4@@
+I like [ clerks waiters caretakers teachers ] , and_more_generally  [ workers workers workers workers ] . @@2@@ @@5@@
+I like [ workers workers workers workers ] , and_more_generally [ clerks waiters caretakers teachers ] . @@1@@
+</block>
+<block ID='generally-scientists' invert-odd>
+I like [ biologists geneticists astronomers physicists ] , and_more_generally  [ clerks waiters caretakers janitors ] . @@3@@
+I like [ clerks waiters caretakers janitors ] , and_more_generally  [ biologists geneticists astronomers physicists ] . @@4@@
+I like [ biologists geneticists astronomers physicists ] , and_more_generally  [ scientists scientists scientists scientists ] . @@2@@ @@5@@
+I like [ scientists scientists scientists scientists ] , and_more_generally [ biologists geneticists astronomers physicists ] . @@1@@
+</block>
+<block ID='generally-countries-name' invert-odd>
+I study [ Italy Spain Germany France ] , and_more_generally  [ continents planets oceans hemispheres ] . @@3@@
+I study [ continents planets oceans hemispheres ] , and_more_generally  [ Italy Spain Germany France ] . @@4@@
+I study [ Italy Spain Germany France ] , and_more_generally  [ countries countries countries countries ] . @@2@@ @@5@@
+I study [ countries countries countries countries ] , and_more_generally  [ Italy Spain Germany France ] . @@1@@
+</block>
+<block ID='generally-painters-name' invert-odd>
+I like [ Picasso Rembrandt Matisse Caravaggio ] , and_more_generally  [ clerks waiters caretakers teachers ] . @@3@@
+I like [ clerks waiters caretakers teachers ] , and_more_generally  [ Picasso Rembrandt Matisse Caravaggio ] . @@4@@
+I like [ Picasso Rembrandt Matisse Caravaggio ] , and_more_generally  [ painters painters painters painters ] . @@2@@ @@5@@
+I like [ painters painters painters painters  ] , and_more_generally  [ Picasso Rembrandt Matisse Caravaggio ] . @@1@@
+</block>
+<block ID='generally-politicians-name' invert-odd>
+I like [ Churchill Obama Lincoln Merkel ] , and_more_generally  [ waiters caretakers drivers farmers ] . @@3@@
+I like [ waiters caretakers drivers farmers ] , and_more_generally  [ Churchill Obama Lincoln Merkel ] . @@4@@
+I like [ Churchill Obama Lincoln Merkel ] , and_more_generally  [ politicians politicians politicians politicians  ] . @@2@@ @@5@@
+I like [ politicians politicians politicians politicians  ] , and_more_generally  [ Churchill Obama Lincoln Merkel ] . @@1@@
+</block>
+<block ID='generally-actors-name' invert-odd>
+I like [ Jack_Nicholson Morgan_Freeman Harrison_Ford Sean_Connery ] , and_more_generally  [ mothers girls women ladies ] . @@3@@
+I like [ mothers girls women ladies ] , and_more_generally  [ Jack_Nicholson Morgan_Freeman Harrison_Ford Sean_Connery ] . @@4@@
+I like [ Jack_Nicholson Morgan_Freeman Harrison_Ford Sean_Connery ] , and_more_generally  [ actors actors actors actors ] . @@2@@ @@5@@
+I like [ actors actors actors actors ] , and_more_generally [ Jack_Nicholson Morgan_Freeman Harrison_Ford Sean_Connery ] . @@1@@
+</block>
+#
+########################################## and X too  ##########################################
+#
+<block ID='andtoo-dogs' invert-odd>
+I like [ huskies bobtails bulldogs beagles ] , and [ cats hamsters parrots birds ] too . @@3@@ @@5@@
+I like [ cats hamsters parrots birds ] , and [ huskies bobtails bulldogs beagles ] too . @@4@@ @@5@@
+I like [ huskies bobtails bulldogs beagles ] , and [ dogs dogs dogs dogs ] too . @@2@@
+I like [ dogs dogs dogs dogs ] , and [ huskies bobtails bulldogs beagles ] too . @@1@@
+</block>
+<block ID='andtoo-birds' invert-odd>
+I like [ parrots ducks blackbirds sparrows ] , and [ cats hamsters pigs dogs ] too . @@3@@ @@5@@
+I like [ cats hamsters pigs dogs ] , and [ parrots ducks blackbirds sparrows ] too . @@4@@ @@5@@
+I like [ parrots ducks blackbirds sparrows ] , and [ birds birds birds birds ] too . @@2@@
+I like [ birds birds birds birds ] , and [ parrots ducks blackbirds sparrows ] too . @@1@@
+</block>
+<block ID='andtoo-mammals' invert-odd>
+I like [ cats dogs horses cows ] , and [ reptiles birds insects frogs ] too . @@3@@ @@5@@
+I like [ reptiles birds insects frogs ] , and [ cats dogs horses cows ] too . @@4@@ @@5@@
+I like [ cats dogs horses cows ] , and [ mammals mammals mammals mammals ] too . @@2@@
+I like [ mammals mammals mammals mammals ] , and [ cats dogs horses cows ] too . @@1@@
+</block>
+<block ID='andtoo-cars' invert-odd>
+I like [ Volvos Skodas Ferraris Fords ] , and [ motorcycles bicycles trains airplanes ] too . @@3@@ @@5@@
+I like [ motorcycles bicycles trains planes ] , and [ Volvos Skodas Ferraris Fords ] too . @@4@@ @@5@@
+I like [ Volvos Skodas Ferraris Fords ] , and [ cars cars cars cars ] too . @@2@@
+I like [ cars cars cars cars ] , and [ Volvos Skodas Ferraris Fords ]  too . @@1@@
+</block>
+<block ID='andtoo-motorcycles' invert-odd>
+I like [ Harley-Davidson Suzukis enduros Kawasakis ] , and [ cars bicycles trains airplanes ] too . @@3@@ @@5@@
+I like [ cars bicycles trains planes ] , and [ Harley-Davidson Suzukis enduros Kawasakis ] too . @@4@@ @@5@@
+I like [ Harley-Davidson Suzukis enduros Kawasakis ] , and [ motorcycles motorcycles motorcycles motorcycles ] too . @@2@@
+I like [ motorcycles motorcycles motorcycles motorcycles ] , and [ Harley-Davidson Suzukis enduros Kawasakis ] too . @@1@@
+</block>
+<block ID='andtoo-cutlery' invert-odd>
+I like [ forks spoons knives ] , and [ plates glasses pitchers ] too . @@3@@ @@5@@
+I like [ plates glasses pitchers ] , and [ forks spoons knives ] too . @@4@@ @@5@@
+I like [ forks spoons knives ] , and [ cutlery cutlery cutlery  ] too . @@2@@
+I like [ cutlery cutlery cutlery ] , and [ forks spoons knives ] too . @@1@@
+</block>
+<block ID='andtoo-jewelry' invert-odd>
+I like [ shirts trousers socks jeans ] , and [ dogs jewelry traveling naturism ] too . @@3@@ @@5@@
+I like [ dogs jewelry traveling naturism ] , and [ shirts trousers socks jeans ] too . @@4@@ @@5@@
+I like [ shirts trousers socks jeans ] , and [ clothes clothes clothes clothes ] too . @@2@@
+I like [ clothes clothes clothes clothes ] , and [ shirts trousers socks jeans ] too . @@1@@
+</block>
+<block ID='andtoo-cities-name' invert-odd>
+I like [ London Rome Paris Amsterdam ] , and [ towns villages settlements camps ] too . @@3@@ @@5@@
+I like [ towns villages settlements camps ] , and [ London Rome Paris Amsterdam ] too . @@4@@ @@5@@
+I like [ London Rome Paris Amsterdam ] , and [ cities cities cities cities ] too . @@2@@
+I like [ cities cities cities cities ] , and [ London Rome Paris Amsterdam ] too . @@1@@
+</block>
+<block ID='andtoo-birds' invert-odd>
+I like [ oaks birches firs pines ] , and [ grass animals bushes shrubs ] too . @@3@@ @@5@@
+I like [ grass animals bushes shrubs ] , and [ oaks birches firs pines ] too . @@4@@ @@5@@
+I like [ oaks birches firs pines ] , and [ trees trees trees trees ] too . @@2@@
+I like [ trees trees trees trees ] , and [ oaks birches firs pines ] too . @@1@@
+</block>
+<block ID='andtoo-plastics' invert-odd>
+I like [ polyester nylon vinyl PVC ] , and [ wood cotton glass leather ] too . @@3@@ @@5@@
+I like [ wood cotton glass leather ] , and [ polyester nylon vinyl PVC ] too . @@4@@ @@5@@
+I like [ polyester nylon vinyl PVC ] , and [ plastic plastic plastic plastic ] too . @@2@@
+I like [ plastic plastic plastic plastic ] , and [ polyester nylon vinyl PVC ] too . @@1@@
+</block>
+<block ID='andtoo-furniture' invert-odd>
+I like [ chairs tables wardrobes beds ] , and [ cutlery paintings carpeting minimalism ] too . @@3@@ @@5@@
+I like [ cutlery paintings carpeting minimalism ] , and [ chairs tables wardrobes beds ] too . @@4@@ @@5@@
+I like [ chairs tables wardrobes beds ] , and [ furniture furniture furniture furniture ] too . @@2@@
+I like [ furniture furniture furniture furniture ] , and [ chairs tables wardrobes beds ] too . @@1@@
+</block>
+<block ID='andtoo-wines-name' invert-odd>
+I like [ Merlot Chardonnay Chianti Zinfandel ] , and [ coca-cola water sprite beer ] too . @@3@@ @@5@@
+I like [ coca-cola water sprite beer ] , and [ Merlot Chardonnay Chianti Zinfandel ] too . @@4@@ @@5@@
+I like [ Merlot Chardonnay Chianti Zinfandel ] , and [ wine wine wine wine ] too . @@2@@
+I like [ wine wine wine wine ] , and [ Merlot Chardonnay Chianti Zinfandel ] too . @@1@@
+</block>
+<block ID='andtoo-animals' invert-odd>
+I like [ cats dogs hamsters birds ] , and [ cars food humans objects ] too . @@3@@ @@5@@
+I like [ cars food humans objects ] , and [ cats dogs hamsters birds ] too . @@4@@ @@5@@
+I like [ cats dogs hamsters birds ] , and [ animals animals animals animals ] too . @@2@@
+I like [ animals animals animals animals ] , and [ cats dogs hamsters birds ] too . @@1@@
+</block>
+<block ID='andtoo-sports' invert-odd>
+I like [ football basketball badminton running ] , and [ music gaming shopping eating ] too . @@3@@ @@5@@
+I like [ music gaming shopping eating ] , and [ football basketball badminton running ] too . @@4@@ @@5@@
+I like [ football basketball badminton running ] , and [ sports sports sports sports ] too . @@2@@
+I like [ sports sports sports sports ] , and [ football basketball badminton running ] too . @@1@@
+</block>
+<block ID='andtoo-music' invert-odd>
+I like [ pop rock jazz techno folk ] , and [ sports gaming eating partying ] too . @@3@@ @@5@@
+I like [ sports gaming eating partying ] , and [ pop rock jazz techno folk ] too . @@4@@ @@5@@
+I like [ pop rock jazz techno folk ] , and [ music music music music ] too . @@2@@
+I like [ music music music music ] , and [ pop rock jazz techno folk ] too . @@1@@
+</block>
+<block ID='andtoo-vegetables' invert-odd>
+I like [ carrots eggplants cauliflowers tomatoes ] , and [ meat fruits potatoes pancakes ] too . @@3@@ @@5@@
+I like [ meat fruits potatoes pancakes ] , and [ carrots eggplants cauliflowers tomatoes ] too . @@4@@ @@5@@
+I like [ carrots eggplants cauliflowers tomatoes ] , and [ vegetables vegetables vegetables vegetables ] too . @@2@@
+I like [ vegetables vegetables vegetables vegetables ] , and [ carrots eggplants cauliflowers tomatoes ] too . @@1@@
+</block>
+<block ID='andtoo-fruits' invert-odd>
+I like [ apples peaches lemons oranges ] , and [ vegetables meat potatoes pancakes ] too . @@3@@ @@5@@
+I like [ vegetables meat potatoes pancakes ] , and [ apples peaches lemons oranges ] too . @@4@@ @@5@@
+I like [ apples peaches lemons oranges ] , and [ fruits fruits fruits fruits ] too . @@2@@
+I like [ fruits fruits fruits fruits ] , and [ apples peaches lemons oranges ] too . @@1@@
+</block>
+<block ID='andtoo-pork' invert-odd>
+I like [ ham prosciutto bacon lard ] , and [ fish vegetables poultry beef ] too . @@3@@ @@5@@
+I like [ fish vegetables poultry beef ] , and [ ham prosciutto bacon lard ] too . @@4@@ @@5@@
+I like [ ham prosciutto bacon lard ] , and [ pork pork pork pork ] too . @@2@@
+I like [ pork pork pork pork ] , and [ ham prosciutto bacon lard ] too . @@1@@
+</block>
+<block ID='andtoo-desserts' invert-odd>
+I like [ tiramisu pastries ice-cream cheesecake ] , and [ salads pasta fruits vegetables ] too . @@3@@ @@5@@
+I like [ salads pasta fruits vegetables ] , and [ tiramisu pastries ice-cream cheesecake ] too . @@4@@ @@5@@
+I like [ tiramisu pastries ice-cream cheesecake ] , and [ desserts desserts desserts desserts ] too . @@2@@
+I like [ desserts desserts desserts desserts ] , and [ tiramisu pastries ice-cream cheesecake ] too . @@1@@
+</block>
+<block ID='andtoo-seafood' invert-odd>
+I like [ salmon crabs oysters caviar ] , and [ chicken meat poultry beef ] too . @@3@@ @@5@@
+I like [ chicken meat poultry beef ] , and [ salmon crabs oysters caviar ] too . @@4@@ @@5@@
+I like [ salmon crabs oysters caviar ] , and [ seafood seafood seafood seafood ] too . @@2@@
+I like [ seafood seafood seafood seafood ] , and [ salmon crabs oysters caviar ] too . @@1@@
+</block>
+<block ID='andtoo-apartment' invert-odd>
+I like [ lofts penthouses condos studios ] , and [ farms villas bungalows cottages ] too . @@3@@ @@5@@
+I like [ farms villas bungalows cottages ] , and [ lofts penthouses condos studios ] too . @@4@@ @@5@@
+I like [ lofts penthouses condos studios ] , and [ apartments apartments apartments apartments ] too . @@2@@
+I like [ apartments apartments apartments apartments ] , and [ lofts penthouses condos studios ] too . @@1@@
+</block>
+<block ID='andtoo-movies' invert-odd>
+I like [ thrillers westerns comedies documentaries ] , and [ essays textbooks games reading ] too . @@3@@ @@5@@
+I like [ essays textbooks games reading ] , and [ thrillers westerns comedies documentaries ] too . @@4@@ @@5@@
+I like [ thrillers westerns comedies documentaries ] , and [ movies movies movies movies ] too . @@2@@
+I like [ movies movies movies movies ] , and [ thrillers westerns comedies documentaries ] too . @@1@@
+</block>
+<block ID='andtoo-jewelry' invert-odd>
+I like [ bracelets necklaces earrings rings ] , and [ handbags scarfs glasses shoes ] too . @@3@@ @@5@@
+I like [ handbags scarfs glasses shoes ] , and [ bracelets necklaces earrings rings ] too . @@4@@ @@5@@
+I like [ bracelets necklaces earrings rings ] , and [ jewelry jewelry jewelry jewelry ] too . @@2@@
+I like [ jewelry jewelry jewelry jewelry ] , and [ bracelets necklaces earrings rings ] too . @@1@@
+</block>
+<block ID='andtoo-pets' invert-odd>
+I like [ cats dogs rabbits hamsters ] , and [ tigers bears lions whales ] too . @@3@@ @@5@@
+I like [ tigers bears lions whales ] , and [ cats dogs rabbits hamsters ] too . @@4@@ @@5@@
+I like [ cats dogs rabbits hamsters ] , and [ pets pets pets pets ] too . @@2@@
+I like [ pets pets pets pets ] , and [ cats dogs rabbits hamsters ] too . @@1@@
+</block>
+<block ID='andtoo-rain' invert-odd>
+I like [ drizzle rainstorms showers downpours ] , and [ sunshine snow fog mist ] too . @@3@@ @@5@@
+I like [ sunshine snow fog mist ] , and [ drizzle rainstorms showers downpours ] too . @@4@@ @@5@@
+I like [ drizzle rainstorms showers downpours ] , and [ rain rain rain rain ] too . @@2@@
+I like [ rain rain rain rain ] , and [ drizzle rainstorms showers downpours ] too . @@1@@
+</block>
+<block ID='andtoo-nature' invert-odd>
+I like [ mountains forests lakes marshes ] , and [ cities malls houses concrete ] too . @@3@@ @@5@@
+I like [ cities malls houses concrete ] , and [ mountains forests lakes marshes ] too . @@4@@ @@5@@
+I like [ mountains forests lakes marshes ] , and [ nature nature nature nature ] too . @@2@@
+I like [ nature nature nature nature ] , and [ mountains forests lakes marshes ] too . @@1@@
+</block>
+<block ID='andtoo-senses' invert-odd>
+He uses [ sight hearing touch taste ] , and [ rumors reports reconstructions guesses ] too . @@3@@ @@5@@
+He uses [ rumors reports reconstructions guesses ] , and [ sight hearing touch taste ] too . @@4@@ @@5@@
+He uses [ sight hearing touch taste ] , and [ senses senses senses senses ] too . @@2@@
+He uses [ senses senses senses senses ] , and [ sight hearing touch taste ] too . @@1@@
+</block>
+<block ID='andtoo-emotions' invert-odd>
+He likes [ joy fear love sadness ] , and [ wisdom stupidity bravery wickedness ] too . @@3@@ @@5@@
+He likes [ wisdom stupidity bravery wickedness ] , and [ joy fear love sadness ] too . @@4@@ @@5@@
+He likes [ joy fear love sadness ] , and [ emotions emotions emotions emotions ] too . @@2@@
+He likes [ emotions emotions emotions emotions ] , and [ joy fear love sadness ] too . @@1@@
+</block>
+<block ID='andtoo-books' invert-odd>
+I like [ textbooks essays novels biographies ] , and [ musics films cartoons paintings ] too . @@3@@ @@5@@
+I like [ musics films cartoons paintings ] , and [ textbooks essays novels biographies ] too . @@4@@ @@5@@
+I like [ textbooks essays novels biographies ] , and [ books books books books ] too . @@2@@
+I like [ books books books books ] , and [ textbooks essays novels biographies ] too . @@1@@
+</block>
+<block ID='andtoo-workers' invert-odd>
+I like [ clerks waiters caretakers teachers ] , and [ factories restaurants schools offices ] too . @@3@@ @@5@@
+I like [ factories restaurants schools offices ] , and [ clerks waiters caretakers teachers ] too . @@4@@ @@5@@
+I like [ clerks waiters caretakers teachers ] , and [ workers workers workers workers ] too . @@2@@
+I like [ workers workers workers workers ] , and [ clerks waiters caretakers teachers ] too . @@1@@
+</block>
+<block ID='andtoo-scientists' invert-odd>
+I like [ biologists geneticists astronomers physicists ] , and [ clerks waiters caretakers janitors ] too . @@3@@ @@5@@
+I like [ clerks waiters caretakers janitors ] , and [ biologists geneticists astronomers physicists ] too . @@4@@ @@5@@
+I like [ biologists geneticists astronomers physicists ] , and [ scientists scientists scientists scientists ] too . @@2@@
+I like [ scientists scientists scientists scientists ] , and [ biologists geneticists astronomers physicists ] too . @@1@@
+</block>
+<block ID='andtoo-countries-name' invert-odd>
+I study [ Italy Spain Germany France ] , and [ continents planets oceans hemispheres ] too . @@3@@ @@5@@
+I study [ continents planets oceans hemispheres ] , and [ Italy Spain Germany France ] too . @@4@@ @@5@@
+I study [ Italy Spain Germany France ] , and [ countries countries countries countries ] too . @@2@@
+I study [ countries countries countries countries ] , and [ Italy Spain Germany France ] too . @@1@@
+</block>
+<block ID='andtoo-painters-name' invert-odd>
+I like [ Picasso Rembrandt Matisse Caravaggio ] , and [ clerks waiters caretakers teachers ] too . @@3@@ @@5@@
+I like [ clerks waiters caretakers teachers ] , and [ Picasso Rembrandt Matisse Caravaggio ] too . @@4@@ @@5@@
+I like [ Picasso Rembrandt Matisse Caravaggio ] , and [ painters painters painters painters ] too . @@2@@
+I like [ painters painters painters painters  ] , and [ Picasso Rembrandt Matisse Caravaggio ] too . @@1@@
+</block>
+<block ID='andtoo-politicians-name' invert-odd>
+I like [ Churchill Obama Lincoln Merkel ] , and [ waiters caretakers drivers farmers ] too . @@3@@ @@5@@
+I like [ waiters caretakers drivers farmers ] , and [ Churchill Obama Lincoln Merkel ] too . @@4@@ @@5@@
+I like [ Churchill Obama Lincoln Merkel ] , and [ politicians politicians politicians politicians  ] too . @@2@@
+I like [ politicians politicians politicians politicians  ] , and [ Churchill Obama Lincoln Merkel ] too . @@1@@
+</block>
+<block ID='andtoo-actors-name' invert-odd>
+I like [ Jack_Nicholson Morgan_Freeman Harrison_Ford Sean_Connery ] , and [ mothers girls women ladies ] too . @@3@@ @@5@@
+I like [ mothers girls women ladies ] , and [ Jack_Nicholson Morgan_Freeman Harrison_Ford Sean_Connery ] too . @@4@@ @@5@@
+I like [ Jack_Nicholson Morgan_Freeman Harrison_Ford Sean_Connery ] , and [ actors actors actors actors ] too . @@2@@
+I like [ actors actors actors actors ] , and [ Jack_Nicholson Morgan_Freeman Harrison_Ford Sean_Connery ] too . @@1@@
+</block>
+#
+########################################## I prefer  ##########################################
+#
+<block ID='prefer-dogs' invert-odd>
+I do not like [ huskies bobtails bulldogs beagles ] , I_prefer [ cats hamsters parrots birds ] . @@3@@ @@5@@
+I do not like [ cats hamsters parrots birds ] , I_prefer [ huskies bobtails bulldogs beagles ] . @@4@@ @@5@@
+I do not like [ huskies bobtails bulldogs beagles ] , I_prefer [ dogs dogs dogs dogs ] . @@2@@
+I do not like [ dogs dogs dogs dogs ] , I_prefer [ huskies bobtails bulldogs beagles ] . @@1@@
+</block>
+<block ID='prefer-birds' invert-odd>
+I do not like [ parrots ducks blackbirds sparrows ] , I_prefer [ cats hamsters pigs dogs ] . @@3@@ @@5@@
+I do not like [ cats hamsters pigs dogs ] , I_prefer [ parrots ducks blackbirds sparrows ] . @@4@@ @@5@@
+I do not like [ parrots ducks blackbirds sparrows ] , I_prefer [ birds birds birds birds ] . @@2@@
+I do not like [ birds birds birds birds ] , I_prefer [ parrots ducks blackbirds sparrows ] . @@1@@
+</block>
+<block ID='prefer-mammals' invert-odd>
+I do not like [ cats dogs horses cows ] , I_prefer [ reptiles birds insects frogs ] . @@3@@ @@5@@
+I do not like [ reptiles birds insects frogs ] , I_prefer [ cats dogs horses cows ] . @@4@@ @@5@@
+I do not like [ cats dogs horses cows ] , I_prefer [ mammals mammals mammals mammals ] . @@2@@
+I do not like [ mammals mammals mammals mammals ] , I_prefer [ cats dogs horses cows ] . @@1@@
+</block>
+<block ID='prefer-cars' invert-odd>
+I do not like [ Volvos Skodas Ferraris Fords ] , I_prefer [ motorcycles bicycles trains airplanes ] . @@3@@ @@5@@
+I do not like [ motorcycles bicycles trains planes ] , I_prefer [ Volvos Skodas Ferraris Fords ] . @@4@@ @@5@@
+I do not like [ Volvos Skodas Ferraris Fords ] , I_prefer [ cars cars cars cars ] . @@2@@
+I do not like [ cars cars cars cars ] , I_prefer [ Volvos Skodas Ferraris Fords ]  . @@1@@
+</block>
+<block ID='prefer-motorcycles' invert-odd>
+I do not like [ Harley-Davidson Suzukis enduros Kawasakis ] , I_prefer [ cars bicycles trains airplanes ] . @@3@@ @@5@@
+I do not like [ cars bicycles trains planes ] , I_prefer [ Harley-Davidson Suzukis enduros Kawasakis ] . @@4@@ @@5@@
+I do not like [ Harley-Davidson Suzukis enduros Kawasakis ] , I_prefer [ motorcycles motorcycles motorcycles motorcycles ] . @@2@@
+I do not like [ motorcycles motorcycles motorcycles motorcycles ] , I_prefer [ Harley-Davidson Suzukis enduros Kawasakis ] . @@1@@
+</block>
+<block ID='prefer-cutlery' invert-odd>
+I do not like [ forks spoons knives ] , I_prefer [ plates glasses pitchers ] . @@3@@ @@5@@
+I do not like [ plates glasses pitchers ] , I_prefer [ forks spoons knives ] . @@4@@ @@5@@
+I do not like [ forks spoons knives ] , I_prefer [ cutlery cutlery cutlery  ] . @@2@@
+I do not like [ cutlery cutlery cutlery ] , I_prefer [ forks spoons knives ] . @@1@@
+</block>
+<block ID='prefer-jewelry' invert-odd>
+I do not like [ shirts trousers socks jeans ] , I_prefer [ dogs jewelry traveling naturism ] . @@3@@ @@5@@
+I do not like [ dogs jewelry traveling naturism ] , I_prefer [ shirts trousers socks jeans ] . @@4@@ @@5@@
+I do not like [ shirts trousers socks jeans ] , I_prefer [ clothes clothes clothes clothes ] . @@2@@
+I do not like [ clothes clothes clothes clothes ] , I_prefer [ shirts trousers socks jeans ] . @@1@@
+</block>
+<block ID='prefer-cities-name' invert-odd>
+I do not like [ London Rome Paris Amsterdam ] , I_prefer [ towns villages settlements camps ] . @@3@@ @@5@@
+I do not like [ towns villages settlements camps ] , I_prefer [ London Rome Paris Amsterdam ] . @@4@@ @@5@@
+I do not like [ London Rome Paris Amsterdam ] , I_prefer [ cities cities cities cities ] . @@2@@
+I do not like [ cities cities cities cities ] , I_prefer [ London Rome Paris Amsterdam ] . @@1@@
+</block>
+<block ID='prefer-birds' invert-odd>
+I do not like [ oaks birches firs pines ] , I_prefer [ grass animals bushes shrubs ] . @@3@@ @@5@@
+I do not like [ grass animals bushes shrubs ] , I_prefer [ oaks birches firs pines ] . @@4@@ @@5@@
+I do not like [ oaks birches firs pines ] , I_prefer [ trees trees trees trees ] . @@2@@
+I do not like [ trees trees trees trees ] , I_prefer [ oaks birches firs pines ] . @@1@@
+</block>
+<block ID='prefer-plastics' invert-odd>
+I do not like [ polyester nylon vinyl PVC ] , I_prefer [ wood cotton glass leather ] . @@3@@ @@5@@
+I do not like [ wood cotton glass leather ] , I_prefer [ polyester nylon vinyl PVC ] . @@4@@ @@5@@
+I do not like [ polyester nylon vinyl PVC ] , I_prefer [ plastic plastic plastic plastic ] . @@2@@
+I do not like [ plastic plastic plastic plastic ] , I_prefer [ polyester nylon vinyl PVC ] . @@1@@
+</block>
+<block ID='prefer-furniture' invert-odd>
+I do not like [ chairs tables wardrobes beds ] , I_prefer [ cutlery paintings carpeting minimalism ] . @@3@@ @@5@@
+I do not like [ cutlery paintings carpeting minimalism ] , I_prefer [ chairs tables wardrobes beds ] . @@4@@ @@5@@
+I do not like [ chairs tables wardrobes beds ] , I_prefer [ furniture furniture furniture furniture ] . @@2@@
+I do not like [ furniture furniture furniture furniture ] , I_prefer [ chairs tables wardrobes beds ] . @@1@@
+</block>
+<block ID='prefer-wines-name' invert-odd>
+I do not like [ Merlot Chardonnay Chianti Zinfandel ] , I_prefer [ coca-cola water sprite beer ] . @@3@@ @@5@@
+I do not like [ coca-cola water sprite beer ] , I_prefer [ Merlot Chardonnay Chianti Zinfandel ] . @@4@@ @@5@@
+I do not like [ Merlot Chardonnay Chianti Zinfandel ] , I_prefer [ wine wine wine wine ] . @@2@@
+I do not like [ wine wine wine wine ] , I_prefer [ Merlot Chardonnay Chianti Zinfandel ] . @@1@@
+</block>
+<block ID='prefer-animals' invert-odd>
+I do not like [ cats dogs hamsters birds ] , I_prefer [ cars food humans objects ] . @@3@@ @@5@@
+I do not like [ cars food humans objects ] , I_prefer [ cats dogs hamsters birds ] . @@4@@ @@5@@
+I do not like [ cats dogs hamsters birds ] , I_prefer [ animals animals animals animals ] . @@2@@
+I do not like [ animals animals animals animals ] , I_prefer [ cats dogs hamsters birds ] . @@1@@
+</block>
+<block ID='prefer-sports' invert-odd>
+I do not like [ football basketball badminton running ] , I_prefer [ music gaming shopping eating ] . @@3@@ @@5@@
+I do not like [ music gaming shopping eating ] , I_prefer [ football basketball badminton running ] . @@4@@ @@5@@
+I do not like [ football basketball badminton running ] , I_prefer [ sports sports sports sports ] . @@2@@
+I do not like [ sports sports sports sports ] , I_prefer [ football basketball badminton running ] . @@1@@
+</block>
+<block ID='prefer-music' invert-odd>
+I do not like [ pop rock jazz techno folk ] , I_prefer [ sports gaming eating partying ] . @@3@@ @@5@@
+I do not like [ sports gaming eating partying ] , I_prefer [ pop rock jazz techno folk ] . @@4@@ @@5@@
+I do not like [ pop rock jazz techno folk ] , I_prefer [ music music music music ] . @@2@@
+I do not like [ music music music music ] , I_prefer [ pop rock jazz techno folk ] . @@1@@
+</block>
+<block ID='prefer-vegetables' invert-odd>
+I do not like [ carrots eggplants cauliflowers tomatoes ] , I_prefer [ meat fruits potatoes pancakes ] . @@3@@ @@5@@
+I do not like [ meat fruits potatoes pancakes ] , I_prefer [ carrots eggplants cauliflowers tomatoes ] . @@4@@ @@5@@
+I do not like [ carrots eggplants cauliflowers tomatoes ] , I_prefer [ vegetables vegetables vegetables vegetables ] . @@2@@
+I do not like [ vegetables vegetables vegetables vegetables ] , I_prefer [ carrots eggplants cauliflowers tomatoes ] . @@1@@
+</block>
+<block ID='prefer-fruits' invert-odd>
+I do not like [ apples peaches lemons oranges ] , I_prefer [ vegetables meat potatoes pancakes ] . @@3@@ @@5@@
+I do not like [ vegetables meat potatoes pancakes ] , I_prefer [ apples peaches lemons oranges ] . @@4@@ @@5@@
+I do not like [ apples peaches lemons oranges ] , I_prefer [ fruits fruits fruits fruits ] . @@2@@
+I do not like [ fruits fruits fruits fruits ] , I_prefer [ apples peaches lemons oranges ] . @@1@@
+</block>
+<block ID='prefer-pork' invert-odd>
+I do not like [ ham prosciutto bacon lard ] , I_prefer [ fish vegetables poultry beef ] . @@3@@ @@5@@
+I do not like [ fish vegetables poultry beef ] , I_prefer [ ham prosciutto bacon lard ] . @@4@@ @@5@@
+I do not like [ ham prosciutto bacon lard ] , I_prefer [ pork pork pork pork ] . @@2@@
+I do not like [ pork pork pork pork ] , I_prefer [ ham prosciutto bacon lard ] . @@1@@
+</block>
+<block ID='prefer-desserts' invert-odd>
+I do not like [ tiramisu pastries ice-cream cheesecake ] , I_prefer [ salads pasta fruits vegetables ] . @@3@@ @@5@@
+I do not like [ salads pasta fruits vegetables ] , I_prefer [ tiramisu pastries ice-cream cheesecake ] . @@4@@ @@5@@
+I do not like [ tiramisu pastries ice-cream cheesecake ] , I_prefer [ desserts desserts desserts desserts ] . @@2@@
+I do not like [ desserts desserts desserts desserts ] , I_prefer [ tiramisu pastries ice-cream cheesecake ] . @@1@@
+</block>
+<block ID='prefer-seafood' invert-odd>
+I do not like [ salmon crabs oysters caviar ] , I_prefer [ chicken meat poultry beef ] . @@3@@ @@5@@
+I do not like [ chicken meat poultry beef ] , I_prefer [ salmon crabs oysters caviar ] . @@4@@ @@5@@
+I do not like [ salmon crabs oysters caviar ] , I_prefer [ seafood seafood seafood seafood ] . @@2@@
+I do not like [ seafood seafood seafood seafood ] , I_prefer [ salmon crabs oysters caviar ] . @@1@@
+</block>
+<block ID='prefer-apartment' invert-odd>
+I do not like [ lofts penthouses condos studios ] , I_prefer [ farms villas bungalows cottages ] . @@3@@ @@5@@
+I do not like [ farms villas bungalows cottages ] , I_prefer [ lofts penthouses condos studios ] . @@4@@ @@5@@
+I do not like [ lofts penthouses condos studios ] , I_prefer [ apartments apartments apartments apartments ] . @@2@@
+I do not like [ apartments apartments apartments apartments ] , I_prefer [ lofts penthouses condos studios ] . @@1@@
+</block>
+<block ID='prefer-movies' invert-odd>
+I do not like [ thrillers westerns comedies documentaries ] , I_prefer [ essays textbooks games reading ] . @@3@@ @@5@@
+I do not like [ essays textbooks games reading ] , I_prefer [ thrillers westerns comedies documentaries ] . @@4@@ @@5@@
+I do not like [ thrillers westerns comedies documentaries ] , I_prefer [ movies movies movies movies ] . @@2@@
+I do not like [ movies movies movies movies ] , I_prefer [ thrillers westerns comedies documentaries ] . @@1@@
+</block>
+<block ID='prefer-jewelry' invert-odd>
+I do not like [ bracelets necklaces earrings rings ] , I_prefer [ handbags scarfs glasses shoes ] . @@3@@ @@5@@
+I do not like [ handbags scarfs glasses shoes ] , I_prefer [ bracelets necklaces earrings rings ] . @@4@@ @@5@@
+I do not like [ bracelets necklaces earrings rings ] , I_prefer [ jewelry jewelry jewelry jewelry ] . @@2@@
+I do not like [ jewelry jewelry jewelry jewelry ] , I_prefer [ bracelets necklaces earrings rings ] . @@1@@
+</block>
+<block ID='prefer-pets' invert-odd>
+I do not like [ cats dogs rabbits hamsters ] , I_prefer [ tigers bears lions whales ] . @@3@@ @@5@@
+I do not like [ tigers bears lions whales ] , I_prefer [ cats dogs rabbits hamsters ] . @@4@@ @@5@@
+I do not like [ cats dogs rabbits hamsters ] , I_prefer [ pets pets pets pets ] . @@2@@
+I do not like [ pets pets pets pets ] , I_prefer [ cats dogs rabbits hamsters ] . @@1@@
+</block>
+<block ID='prefer-rain' invert-odd>
+I do not like [ drizzle rainstorms showers downpours ] , I_prefer [ sunshine snow fog mist ] . @@3@@ @@5@@
+I do not like [ sunshine snow fog mist ] , I_prefer [ drizzle rainstorms showers downpours ] . @@4@@ @@5@@
+I do not like [ drizzle rainstorms showers downpours ] , I_prefer [ rain rain rain rain ] . @@2@@
+I do not like [ rain rain rain rain ] , I_prefer [ drizzle rainstorms showers downpours ] . @@1@@
+</block>
+<block ID='prefer-nature' invert-odd>
+I do not like [ mountains forests lakes marshes ] , I_prefer [ cities malls houses concrete ] . @@3@@ @@5@@
+I do not like [ cities malls houses concrete ] , I_prefer [ mountains forests lakes marshes ] . @@4@@ @@5@@
+I do not like [ mountains forests lakes marshes ] , I_prefer [ nature nature nature nature ] . @@2@@
+I do not like [ nature nature nature nature ] , I_prefer [ mountains forests lakes marshes ] . @@1@@
+</block>
+<block ID='prefer-senses' invert-odd>
+He does not use [ sight hearing touch taste ] , he_prefers [ rumors reports reconstructions guesses ] . @@3@@ @@5@@
+He does not use [ rumors reports reconstructions guesses ] , he_prefers [ sight hearing touch taste ] . @@4@@ @@5@@
+He does not use [ sight hearing touch taste ] , he_prefers [ senses senses senses senses ] . @@2@@
+He does not use [ senses senses senses senses ] , he_prefers [ sight hearing touch taste ] . @@1@@
+</block>
+<block ID='prefer-emotions' invert-odd>
+He does not likes [ joy fear love sadness ] , he_prefers [ wisdom stupidity bravery wickedness ] . @@3@@ @@5@@
+He does not likes [ wisdom stupidity bravery wickedness ] , he_prefers [ joy fear love sadness ] . @@4@@ @@5@@
+He does not likes [ joy fear love sadness ] , he_prefers [ emotions emotions emotions emotions ] . @@2@@
+He does not likes [ emotions emotions emotions emotions ] , he_prefers [ joy fear love sadness ] . @@1@@
+</block>
+<block ID='prefer-books' invert-odd>
+I do not like [ textbooks essays novels biographies ] , I_prefer [ musics films cartoons paintings ] . @@3@@ @@5@@
+I do not like [ musics films cartoons paintings ] , I_prefer [ textbooks essays novels biographies ] . @@4@@ @@5@@
+I do not like [ textbooks essays novels biographies ] , I_prefer [ books books books books ] . @@2@@
+I do not like [ books books books books ] , I_prefer [ textbooks essays novels biographies ] . @@1@@
+</block>
+<block ID='prefer-workers' invert-odd>
+I do not like [ clerks waiters caretakers teachers ] , I_prefer [ factories restaurants schools offices ] . @@3@@ @@5@@
+I do not like [ factories restaurants schools offices ] , I_prefer [ clerks waiters caretakers teachers ] . @@4@@ @@5@@
+I do not like [ clerks waiters caretakers teachers ] , I_prefer [ workers workers workers workers ] . @@2@@
+I do not like [ workers workers workers workers ] , I_prefer [ clerks waiters caretakers teachers ] . @@1@@
+</block>
+<block ID='prefer-scientists' invert-odd>
+I do not like [ biologists geneticists astronomers physicists ] , I_prefer [ clerks waiters caretakers janitors ] . @@3@@ @@5@@
+I do not like [ clerks waiters caretakers janitors ] , I_prefer [ biologists geneticists astronomers physicists ] . @@4@@ @@5@@
+I do not like [ biologists geneticists astronomers physicists ] , I_prefer [ scientists scientists scientists scientists ] . @@2@@
+I do not like [ scientists scientists scientists scientists ] , I_prefer [ biologists geneticists astronomers physicists ] . @@1@@
+</block>
+<block ID='prefer-countries-name' invert-odd>
+I do not like [ Italy Spain Germany France ] , I_prefer whole [ continents planets oceans hemispheres ] . @@3@@ @@5@@
+I do not like whole [ continents planets oceans hemispheres ] , I_prefer [ Italy Spain Germany France ] . @@4@@ @@5@@
+I do not like [ Italy Spain Germany France ] , I_prefer European [ countries countries countries countries ] . @@2@@
+I do not like European [ countries countries countries countries ] , I_prefer [ Italy Spain Germany France ] . @@1@@
+</block>
+<block ID='prefer-painters-name' invert-odd>
+I do not like [ Picasso Rembrandt Matisse Caravaggio ] , I_prefer [ clerks waiters caretakers teachers ] . @@3@@ @@5@@
+I do not like [ clerks waiters caretakers teachers ] , I_prefer [ Picasso Rembrandt Matisse Caravaggio ] . @@4@@ @@5@@
+I do not like [ Picasso Rembrandt Matisse Caravaggio ] , I_prefer [ painters painters painters painters ] . @@2@@
+I do not like [ painters painters painters painters  ] , I_prefer [ Picasso Rembrandt Matisse Caravaggio ] . @@1@@
+</block>
+<block ID='prefer-politicians-name' invert-odd>
+I do not like [ Churchill Obama Lincoln Merkel ] , I_prefer [ waiters caretakers drivers farmers ] . @@3@@ @@5@@
+I do not like [ waiters caretakers drivers farmers ] , I_prefer [ Churchill Obama Lincoln Merkel ] . @@4@@ @@5@@
+I do not like [ Churchill Obama Lincoln Merkel ] , I_prefer [ politicians politicians politicians politicians  ] . @@2@@
+I do not like [ politicians politicians politicians politicians  ] , I_prefer [ Churchill Obama Lincoln Merkel ] . @@1@@
+</block>
+<block ID='prefer-actors-name' invert-odd>
+I do not like [ Jack_Nicholson Morgan_Freeman Harrison_Ford Sean_Connery ] , I_prefer [ mothers girls women ladies ] . @@3@@ @@5@@
+I do not like [ mothers girls women ladies ] , I_prefer [ Jack_Nicholson Morgan_Freeman Harrison_Ford Sean_Connery ] . @@4@@ @@5@@
+I do not like [ Jack_Nicholson Morgan_Freeman Harrison_Ford Sean_Connery ] , I_prefer [ actors actors actors actors ] . @@2@@
+I do not like [ actors actors actors actors ] , I_prefer [ Jack_Nicholson Morgan_Freeman Harrison_Ford Sean_Connery ] . @@1@@
+</block>
+#
+########################################## Comparatives  ##########################################
+#
+<block ID='comparatives-dogs' invert-odd>
+I like [ huskies bobtails bulldogs beagles ] [ more_than as_much_as less_than ] [ cats hamsters parrots birds ] . @@3@@ @@5@@
+I like [ cats hamsters parrots birds ] [ more_than as_much_as less_than ] [ huskies bobtails bulldogs beagles ] . @@4@@ @@5@@
+I like [ huskies bobtails bulldogs beagles ] [ more_than as_much_as less_than ] [ dogs dogs dogs dogs ] . @@2@@
+I like [ dogs dogs dogs dogs ] [ more_than as_much_as less_than ] [ huskies bobtails bulldogs beagles ] . @@1@@
+</block>
+<block ID='comparatives-birds' invert-odd>
+I like [ parrots ducks blackbirds sparrows ] [ more_than as_much_as less_than ] [ cats hamsters pigs dogs ] . @@3@@ @@5@@
+I like [ cats hamsters pigs dogs ] [ more_than as_much_as less_than ] [ parrots ducks blackbirds sparrows ] . @@4@@ @@5@@
+I like [ parrots ducks blackbirds sparrows ] [ more_than as_much_as less_than ] [ birds birds birds birds ] . @@2@@
+I like [ birds birds birds birds ] [ more_than as_much_as less_than ] [ parrots ducks blackbirds sparrows ] . @@1@@
+</block>
+<block ID='comparatives-mammals' invert-odd>
+I like [ cats dogs horses cows ] [ more_than as_much_as less_than ] [ reptiles birds insects frogs ] . @@3@@ @@5@@
+I like [ reptiles birds insects frogs ] [ more_than as_much_as less_than ] [ cats dogs horses cows ] . @@4@@ @@5@@
+I like [ cats dogs horses cows ] [ more_than as_much_as less_than ] [ mammals mammals mammals mammals ] . @@2@@
+I like [ mammals mammals mammals mammals ] [ more_than as_much_as less_than ] [ cats dogs horses cows ] . @@1@@
+</block>
+<block ID='comparatives-cars' invert-odd>
+I like [ Volvos Skodas Ferraris Fords ] [ more_than as_much_as less_than ] [ motorcycles bicycles trains airplanes ] . @@3@@ @@5@@
+I like [ motorcycles bicycles trains planes ] [ more_than as_much_as less_than ] [ Volvos Skodas Ferraris Fords ] . @@4@@ @@5@@
+I like [ Volvos Skodas Ferraris Fords ] [ more_than as_much_as less_than ] [ cars cars cars cars ] . @@2@@
+I like [ cars cars cars cars ] [ more_than as_much_as less_than ] [ Volvos Skodas Ferraris Fords ]  . @@1@@
+</block>
+<block ID='comparatives-motorcycles' invert-odd>
+I like [ Harley-Davidson Suzukis enduros Kawasakis ] [ more_than as_much_as less_than ] [ cars bicycles trains airplanes ] . @@3@@ @@5@@
+I like [ cars bicycles trains planes ] [ more_than as_much_as less_than ] [ Harley-Davidson Suzukis enduros Kawasakis ] . @@4@@ @@5@@
+I like [ Harley-Davidson Suzukis enduros Kawasakis ] [ more_than as_much_as less_than ] [ motorcycles motorcycles motorcycles motorcycles ] . @@2@@
+I like [ motorcycles motorcycles motorcycles motorcycles ] [ more_than as_much_as less_than ] [ Harley-Davidson Suzukis enduros Kawasakis ] . @@1@@
+</block>
+<block ID='comparatives-cutlery' invert-odd>
+I like [ forks spoons knives ] [ more_than as_much_as less_than ] [ plates glasses pitchers ] . @@3@@ @@5@@
+I like [ plates glasses pitchers ] [ more_than as_much_as less_than ] [ forks spoons knives ] . @@4@@ @@5@@
+I like [ forks spoons knives ] [ more_than as_much_as less_than ] [ cutlery cutlery cutlery  ] . @@2@@
+I like [ cutlery cutlery cutlery ] [ more_than as_much_as less_than ] [ forks spoons knives ] . @@1@@
+</block>
+<block ID='comparatives-jewelry' invert-odd>
+I like [ shirts trousers socks jeans ] [ more_than as_much_as less_than ] [ dogs jewelry traveling naturism ] . @@3@@ @@5@@
+I like [ dogs jewelry traveling naturism ] [ more_than as_much_as less_than ] [ shirts trousers socks jeans ] . @@4@@ @@5@@
+I like [ shirts trousers socks jeans ] [ more_than as_much_as less_than ] [ clothes clothes clothes clothes ] . @@2@@
+I like [ clothes clothes clothes clothes ] [ more_than as_much_as less_than ] [ shirts trousers socks jeans ] . @@1@@
+</block>
+<block ID='comparatives-cities-name' invert-odd>
+I like [ London Rome Paris Amsterdam ] [ more_than as_much_as less_than ] [ a_town a_village a_settlement a_camp ] . @@3@@ @@5@@
+I like [ towns villages settlements camps ] [ more_than as_much_as less_than ] [ London Rome Paris Amsterdam ] . @@4@@ @@5@@
+I like [ London Rome Paris Amsterdam ] [ more_than as_much_as less_than ] [ a_city a_city a_city a_city ] . @@2@@
+I like [ cities cities cities cities ] [ more_than as_much_as less_than ] [ London Rome Paris Amsterdam ] . @@1@@
+</block>
+<block ID='comparatives-birds' invert-odd>
+I like [ oaks birches firs pines ] [ more_than as_much_as less_than ] [ grass animals bushes shrubs ] . @@3@@ @@5@@
+I like [ grass animals bushes shrubs ] [ more_than as_much_as less_than ] [ oaks birches firs pines ] . @@4@@ @@5@@
+I like [ oaks birches firs pines ] [ more_than as_much_as less_than ] [ trees trees trees trees ] . @@2@@
+I like [ trees trees trees trees ] [ more_than as_much_as less_than ] [ oaks birches firs pines ] . @@1@@
+</block>
+<block ID='comparatives-plastics' invert-odd>
+I like [ polyester nylon vinyl PVC ] [ more_than as_much_as less_than ] [ wood cotton glass leather ] . @@3@@ @@5@@
+I like [ wood cotton glass leather ] [ more_than as_much_as less_than ] [ polyester nylon vinyl PVC ] . @@4@@ @@5@@
+I like [ polyester nylon vinyl PVC ] [ more_than as_much_as less_than ] [ plastic plastic plastic plastic ] . @@2@@
+I like [ plastic plastic plastic plastic ] [ more_than as_much_as less_than ] [ polyester nylon vinyl PVC ] . @@1@@
+</block>
+<block ID='comparatives-furniture' invert-odd>
+I like [ chairs tables wardrobes beds ] [ more_than as_much_as less_than ] [ cutlery paintings carpeting minimalism ] . @@3@@ @@5@@
+I like [ cutlery paintings carpeting minimalism ] [ more_than as_much_as less_than ] [ chairs tables wardrobes beds ] . @@4@@ @@5@@
+I like [ chairs tables wardrobes beds ] [ more_than as_much_as less_than ] [ furniture furniture furniture furniture ] . @@2@@
+I like [ furniture furniture furniture furniture ] [ more_than as_much_as less_than ] [ chairs tables wardrobes beds ] . @@1@@
+</block>
+<block ID='comparatives-wines-name' invert-odd>
+I like [ Merlot Chardonnay Chianti Zinfandel ] [ more_than as_much_as less_than ] [ coca-cola water sprite beer ] . @@3@@ @@5@@
+I like [ coca-cola water sprite beer ] [ more_than as_much_as less_than ] [ Merlot Chardonnay Chianti Zinfandel ] . @@4@@ @@5@@
+I like [ Merlot Chardonnay Chianti Zinfandel ] [ more_than as_much_as less_than ] [ wine wine wine wine ] . @@2@@
+I like [ wine wine wine wine ] [ more_than as_much_as less_than ] [ Merlot Chardonnay Chianti Zinfandel ] . @@1@@
+</block>
+<block ID='comparatives-animals' invert-odd>
+I like [ cats dogs hamsters birds ] [ more_than as_much_as less_than ] [ cars food humans objects ] . @@3@@ @@5@@
+I like [ cars food humans objects ] [ more_than as_much_as less_than ] [ cats dogs hamsters birds ] . @@4@@ @@5@@
+I like [ cats dogs hamsters birds ] [ more_than as_much_as less_than ] [ animals animals animals animals ] . @@2@@
+I like [ animals animals animals animals ] [ more_than as_much_as less_than ] [ cats dogs hamsters birds ] . @@1@@
+</block>
+<block ID='comparatives-sports' invert-odd>
+I like [ football basketball badminton running ] [ more_than as_much_as less_than ] [ music gaming shopping eating ] . @@3@@ @@5@@
+I like [ music gaming shopping eating ] [ more_than as_much_as less_than ] [ football basketball badminton running ] . @@4@@ @@5@@
+I like [ football basketball badminton running ] [ more_than as_much_as less_than ] [ sports sports sports sports ] . @@2@@
+I like [ sports sports sports sports ] [ more_than as_much_as less_than ] [ football basketball badminton running ] . @@1@@
+</block>
+<block ID='comparatives-music' invert-odd>
+I like [ pop rock jazz techno folk ] [ more_than as_much_as less_than ] [ sports gaming eating partying ] . @@3@@ @@5@@
+I like [ sports gaming eating partying ] [ more_than as_much_as less_than ] [ pop rock jazz techno folk ] . @@4@@ @@5@@
+I like [ pop rock jazz techno folk ] [ more_than as_much_as less_than ] [ music music music music ] . @@2@@
+I like [ music music music music ] [ more_than as_much_as less_than ] [ pop rock jazz techno folk ] . @@1@@
+</block>
+<block ID='comparatives-vegetables' invert-odd>
+I like [ carrots eggplants cauliflowers tomatoes ] [ more_than as_much_as less_than ] [ meat fruits potatoes pancakes ] . @@3@@ @@5@@
+I like [ meat fruits potatoes pancakes ] [ more_than as_much_as less_than ] [ carrots eggplants cauliflowers tomatoes ] . @@4@@ @@5@@
+I like [ carrots eggplants cauliflowers tomatoes ] [ more_than as_much_as less_than ] [ vegetables vegetables vegetables vegetables ] . @@2@@
+I like [ vegetables vegetables vegetables vegetables ] [ more_than as_much_as less_than ] [ carrots eggplants cauliflowers tomatoes ] . @@1@@
+</block>
+<block ID='comparatives-fruits' invert-odd>
+I like [ apples peaches lemons oranges ] [ more_than as_much_as less_than ] [ vegetables meat potatoes pancakes ] . @@3@@ @@5@@
+I like [ vegetables meat potatoes pancakes ] [ more_than as_much_as less_than ] [ apples peaches lemons oranges ] . @@4@@ @@5@@
+I like [ apples peaches lemons oranges ] [ more_than as_much_as less_than ] [ fruits fruits fruits fruits ] . @@2@@
+I like [ fruits fruits fruits fruits ] [ more_than as_much_as less_than ] [ apples peaches lemons oranges ] . @@1@@
+</block>
+<block ID='comparatives-pork' invert-odd>
+I like [ ham prosciutto bacon lard ] [ more_than as_much_as less_than ] [ fish vegetables poultry beef ] . @@3@@ @@5@@
+I like [ fish vegetables poultry beef ] [ more_than as_much_as less_than ] [ ham prosciutto bacon lard ] . @@4@@ @@5@@
+I like [ ham prosciutto bacon lard ] [ more_than as_much_as less_than ] [ pork pork pork pork ] . @@2@@
+I like [ pork pork pork pork ] [ more_than as_much_as less_than ] [ ham prosciutto bacon lard ] . @@1@@
+</block>
+<block ID='comparatives-desserts' invert-odd>
+I like [ tiramisu pastries ice-cream cheesecake ] [ more_than as_much_as less_than ] [ salads pasta fruits vegetables ] . @@3@@ @@5@@
+I like [ salads pasta fruits vegetables ] [ more_than as_much_as less_than ] [ tiramisu pastries ice-cream cheesecake ] . @@4@@ @@5@@
+I like [ tiramisu pastries ice-cream cheesecake ] [ more_than as_much_as less_than ] [ desserts desserts desserts desserts ] . @@2@@
+I like [ desserts desserts desserts desserts ] [ more_than as_much_as less_than ] [ tiramisu pastries ice-cream cheesecake ] . @@1@@
+</block>
+<block ID='comparatives-seafood' invert-odd>
+I like [ salmon crabs oysters caviar ] [ more_than as_much_as less_than ] [ chicken meat poultry beef ] . @@3@@ @@5@@
+I like [ chicken meat poultry beef ] [ more_than as_much_as less_than ] [ salmon crabs oysters caviar ] . @@4@@ @@5@@
+I like [ salmon crabs oysters caviar ] [ more_than as_much_as less_than ] [ seafood seafood seafood seafood ] . @@2@@
+I like [ seafood seafood seafood seafood ] [ more_than as_much_as less_than ] [ salmon crabs oysters caviar ] . @@1@@
+</block>
+<block ID='comparatives-apartment' invert-odd>
+I like [ lofts penthouses condos studios ] [ more_than as_much_as less_than ] [ farms villas bungalows cottages ] . @@3@@ @@5@@
+I like [ farms villas bungalows cottages ] [ more_than as_much_as less_than ] [ lofts penthouses condos studios ] . @@4@@ @@5@@
+I like [ lofts penthouses condos studios ] [ more_than as_much_as less_than ] [ apartments apartments apartments apartments ] . @@2@@
+I like [ apartments apartments apartments apartments ] [ more_than as_much_as less_than ] [ lofts penthouses condos studios ] . @@1@@
+</block>
+<block ID='comparatives-movies' invert-odd>
+I like [ thrillers westerns comedies documentaries ] [ more_than as_much_as less_than ] [ essays textbooks games reading ] . @@3@@ @@5@@
+I like [ essays textbooks games reading ] [ more_than as_much_as less_than ] [ thrillers westerns comedies documentaries ] . @@4@@ @@5@@
+I like [ thrillers westerns comedies documentaries ] [ more_than as_much_as less_than ] [ movies movies movies movies ] . @@2@@
+I like [ movies movies movies movies ] [ more_than as_much_as less_than ] [ thrillers westerns comedies documentaries ] . @@1@@
+</block>
+<block ID='comparatives-jewelry' invert-odd>
+I like [ bracelets necklaces earrings rings ] [ more_than as_much_as less_than ] [ handbags scarfs glasses shoes ] . @@3@@ @@5@@
+I like [ handbags scarfs glasses shoes ] [ more_than as_much_as less_than ] [ bracelets necklaces earrings rings ] . @@4@@ @@5@@
+I like [ bracelets necklaces earrings rings ] [ more_than as_much_as less_than ] [ jewelry jewelry jewelry jewelry ] . @@2@@
+I like [ jewelry jewelry jewelry jewelry ] [ more_than as_much_as less_than ] [ bracelets necklaces earrings rings ] . @@1@@
+</block>
+<block ID='comparatives-pets' invert-odd>
+I like [ cats dogs rabbits hamsters ] [ more_than as_much_as less_than ] [ tigers bears lions whales ] . @@3@@ @@5@@
+I like [ tigers bears lions whales ] [ more_than as_much_as less_than ] [ cats dogs rabbits hamsters ] . @@4@@ @@5@@
+I like [ cats dogs rabbits hamsters ] [ more_than as_much_as less_than ] [ pets pets pets pets ] . @@2@@
+I like [ pets pets pets pets ] [ more_than as_much_as less_than ] [ cats dogs rabbits hamsters ] . @@1@@
+</block>
+<block ID='comparatives-rain' invert-odd>
+I like [ drizzle rainstorms showers downpours ] [ more_than as_much_as less_than ] [ sunshine snow fog mist ] . @@3@@ @@5@@
+I like [ sunshine snow fog mist ] [ more_than as_much_as less_than ] [ drizzle rainstorms showers downpours ] . @@4@@ @@5@@
+I like [ drizzle rainstorms showers downpours ] [ more_than as_much_as less_than ] [ rain rain rain rain ] . @@2@@
+I like [ rain rain rain rain ] [ more_than as_much_as less_than ] [ drizzle rainstorms showers downpours ] . @@1@@
+</block>
+<block ID='comparatives-nature' invert-odd>
+I like [ mountains forests lakes marshes ] [ more_than as_much_as less_than ] [ cities malls houses concrete ] . @@3@@ @@5@@
+I like [ cities malls houses concrete ] [ more_than as_much_as less_than ] [ mountains forests lakes marshes ] . @@4@@ @@5@@
+I like [ mountains forests lakes marshes ] [ more_than as_much_as less_than ] [ nature nature nature nature ] . @@2@@
+I like [ nature nature nature nature ] [ more_than as_much_as less_than ] [ mountains forests lakes marshes ] . @@1@@
+</block>
+<block ID='comparatives-senses' invert-odd>
+He uses [ sight hearing touch taste ] [ more_than as_much_as less_than ] [ rumors reports reconstructions guesses ] . @@3@@ @@5@@
+He uses [ rumors reports reconstructions guesses ] [ more_than as_much_as less_than ] [ sight hearing touch taste ] . @@4@@ @@5@@
+He uses [ sight hearing touch taste ] [ more_than as_much_as less_than ] [ senses senses senses senses ] . @@2@@
+He uses [ senses senses senses senses ] [ more_than as_much_as less_than ] [ sight hearing touch taste ] . @@1@@
+</block>
+<block ID='comparatives-emotions' invert-odd>
+He likes [ joy fear love sadness ] [ more_than as_much_as less_than ] [ wisdom stupidity bravery wickedness ] . @@3@@ @@5@@
+He likes [ wisdom stupidity bravery wickedness ] [ more_than as_much_as less_than ] [ joy fear love sadness ] . @@4@@ @@5@@
+He likes [ joy fear love sadness ] [ more_than as_much_as less_than ] [ emotions emotions emotions emotions ] . @@2@@
+He likes [ emotions emotions emotions emotions ] [ more_than as_much_as less_than ] [ joy fear love sadness ] . @@1@@
+</block>
+<block ID='comparatives-books' invert-odd>
+I like [ textbooks essays novels biographies ] [ more_than as_much_as less_than ] [ musics films cartoons paintings ] . @@3@@ @@5@@
+I like [ musics films cartoons paintings ] [ more_than as_much_as less_than ] [ textbooks essays novels biographies ] . @@4@@ @@5@@
+I like [ textbooks essays novels biographies ] [ more_than as_much_as less_than ] [ books books books books ] . @@2@@
+I like [ books books books books ] [ more_than as_much_as less_than ] [ textbooks essays novels biographies ] . @@1@@
+</block>
+<block ID='comparatives-workers' invert-odd>
+I like [ clerks waiters caretakers teachers ] [ more_than as_much_as less_than ] [ factories restaurants schools offices ] . @@3@@ @@5@@
+I like [ factories restaurants schools offices ] [ more_than as_much_as less_than ] [ clerks waiters caretakers teachers ] . @@4@@ @@5@@
+I like [ clerks waiters caretakers teachers ] [ more_than as_much_as less_than ] [ workers workers workers workers ] . @@2@@
+I like [ workers workers workers workers ] [ more_than as_much_as less_than ] [ clerks waiters caretakers teachers ] . @@1@@
+</block>
+<block ID='comparatives-scientists' invert-odd>
+I like [ biologists geneticists astronomers physicists ] [ more_than as_much_as less_than ] [ clerks waiters caretakers janitors ] . @@3@@ @@5@@
+I like [ clerks waiters caretakers janitors ] [ more_than as_much_as less_than ] [ biologists geneticists astronomers physicists ] . @@4@@ @@5@@
+I like [ biologists geneticists astronomers physicists ] [ more_than as_much_as less_than ] [ scientists scientists scientists scientists ] . @@2@@
+I like [ scientists scientists scientists scientists ] [ more_than as_much_as less_than ] [ biologists geneticists astronomers physicists ] . @@1@@
+</block>
+<block ID='comparatives-countries-name' invert-odd>
+I study [ Italy Spain Germany France ] [ more_than as_much_as less_than ] whole [ continents planets oceans hemispheres ] . @@3@@ @@5@@
+I study whole [ continents planets oceans hemispheres ] [ more_than as_much_as less_than ] [ Italy Spain Germany France ] . @@4@@ @@5@@
+I study [ Italy Spain Germany France ] [ more_than as_much_as less_than ] European [ countries countries countries countries ] . @@2@@
+I study European [ countries countries countries countries ] [ more_than as_much_as less_than ] [ Italy Spain Germany France ] . @@1@@
+</block>
+<block ID='comparatives-painters-name' invert-odd>
+I like [ Picasso Rembrandt Matisse Caravaggio ] [ more_than as_much_as less_than ] [ a_clerk a_waiter a_caretaker a_teacher ] . @@3@@ @@5@@
+I like [ clerks waiters caretakers teachers ] [ more_than as_much_as less_than ] [ Picasso Rembrandt Matisse Caravaggio ] . @@4@@ @@5@@
+I like [ Picasso Rembrandt Matisse Caravaggio ] [ more_than as_much_as less_than ] [ a_painter a_painter a_painter a_painter ] . @@2@@
+I like [ painters painters painters painters  ] [ more_than as_much_as less_than ] [ Picasso Rembrandt Matisse Caravaggio ] . @@1@@
+</block>
+<block ID='comparatives-politicians-name' invert-odd>
+I like [ Churchill Obama Lincoln Merkel ] [ more_than as_much_as less_than ] [ a_waiter a_caretaker a_driver a_farmer ] . @@3@@ @@5@@
+I like [ waiters caretakers drivers farmers ] [ more_than as_much_as less_than ] [ Churchill Obama Lincoln Merkel ] . @@4@@ @@5@@
+I like [ Churchill Obama Lincoln Merkel ] [ more_than as_much_as less_than ] [ a_politician a_politician a_politician a_politician  ] . @@2@@
+I like [ politicians politicians politicians politicians  ] [ more_than as_much_as less_than ] [ Churchill Obama Lincoln Merkel ] . @@1@@
+</block>
+<block ID='comparatives-actors-name' invert-odd>
+I like [ Jack_Nicholson Morgan_Freeman Harrison_Ford Sean_Connery ] [ more_than as_much_as less_than ] [ a_mothers a_girls a_woman a_lady ] . @@3@@ @@5@@
+I like [ mothers girls women ladies ] [ more_than as_much_as less_than ] [ Jack_Nicholson Morgan_Freeman Harrison_Ford Sean_Connery ] . @@4@@ @@5@@
+I like [ Jack_Nicholson Morgan_Freeman Harrison_Ford Sean_Connery ] [ more_than as_much_as less_than ] [ an_actor an_actor an_actor an_actor ] . @@2@@
+I like [ actors actors actors actors ] [ more_than as_much_as less_than ] [ Jack_Nicholson Morgan_Freeman Harrison_Ford Sean_Connery ] . @@1@@
+</block>
+#
+########################################## I'd rather  ##########################################
+#
+<block ID='drather-dogs' invert-odd>
+I would rather have [ huskies bobtails bulldogs beagles ] than [ cats hamsters parrots birds ] . @@3@@ @@5@@
+I would rather have [ cats hamsters parrots birds ] than [ huskies bobtails bulldogs beagles ] . @@4@@ @@5@@
+I would rather have [ huskies bobtails bulldogs beagles ] than [ dogs dogs dogs dogs ] . @@2@@
+I would rather have [ dogs dogs dogs dogs ] than [ huskies bobtails bulldogs beagles ] . @@1@@
+</block>
+<block ID='drather-birds' invert-odd>
+I would rather have [ parrots ducks blackbirds sparrows ] than [ cats hamsters pigs dogs ] . @@3@@ @@5@@
+I would rather have [ cats hamsters pigs dogs ] than [ parrots ducks blackbirds sparrows ] . @@4@@ @@5@@
+I would rather have [ parrots ducks blackbirds sparrows ] than [ birds birds birds birds ] . @@2@@
+I would rather have [ birds birds birds birds ] than [ parrots ducks blackbirds sparrows ] . @@1@@
+</block>
+<block ID='drather-mammals' invert-odd>
+I would rather have [ cats dogs horses cows ] than [ reptiles birds insects frogs ] . @@3@@ @@5@@
+I would rather have [ reptiles birds insects frogs ] than [ cats dogs horses cows ] . @@4@@ @@5@@
+I would rather have [ cats dogs horses cows ] than [ mammals mammals mammals mammals ] . @@2@@
+I would rather have [ mammals mammals mammals mammals ] than [ cats dogs horses cows ] . @@1@@
+</block>
+<block ID='drather-cars' invert-odd>
+I would rather have [ Volvos Skodas Ferraris Fords ] than [ motorcycles bicycles trains airplanes ] . @@3@@ @@5@@
+I would rather have [ motorcycles bicycles trains planes ] than [ Volvos Skodas Ferraris Fords ] . @@4@@ @@5@@
+I would rather have [ Volvos Skodas Ferraris Fords ] than [ cars cars cars cars ] . @@2@@
+I would rather have [ cars cars cars cars ] than [ Volvos Skodas Ferraris Fords ]  . @@1@@
+</block>
+<block ID='drather-motorcycles' invert-odd>
+I would rather have [ Harley-Davidson Suzukis enduros Kawasakis ] than [ cars bicycles trains airplanes ] . @@3@@ @@5@@
+I would rather have [ cars bicycles trains planes ] than [ Harley-Davidson Suzukis enduros Kawasakis ] . @@4@@ @@5@@
+I would rather have [ Harley-Davidson Suzukis enduros Kawasakis ] than [ motorcycles motorcycles motorcycles motorcycles ] . @@2@@
+I would rather have [ motorcycles motorcycles motorcycles motorcycles ] than [ Harley-Davidson Suzukis enduros Kawasakis ] . @@1@@
+</block>
+<block ID='drather-cutlery' invert-odd>
+I would rather have [ forks spoons knives ] than [ plates glasses pitchers ] . @@3@@ @@5@@
+I would rather have [ plates glasses pitchers ] than [ forks spoons knives ] . @@4@@ @@5@@
+I would rather have [ forks spoons knives ] than [ cutlery cutlery cutlery  ] . @@2@@
+I would rather have [ cutlery cutlery cutlery ] than [ forks spoons knives ] . @@1@@
+</block>
+<block ID='drather-jewelry' invert-odd>
+I would rather have [ shirts trousers socks jeans ] than [ dogs jewelry traveling naturism ] . @@3@@ @@5@@
+I would rather have [ dogs jewelry traveling naturism ] than [ shirts trousers socks jeans ] . @@4@@ @@5@@
+I would rather have [ shirts trousers socks jeans ] than [ clothes clothes clothes clothes ] . @@2@@
+I would rather have [ clothes clothes clothes clothes ] than [ shirts trousers socks jeans ] . @@1@@
+</block>
+<block ID='drather-cities-name' invert-odd>
+I would rather have [ London Rome Paris Amsterdam ] than [ a_town a_village a_settlement a_camp ] . @@3@@ @@5@@
+I would rather have [ a_town a_village a_settlement a_camp ] than [ London Rome Paris Amsterdam ] . @@4@@ @@5@@
+I would rather have [ London Rome Paris Amsterdam ] than [ a_city a_city a_city a_city ] . @@2@@
+I would rather have [ a_city a_city a_city a_city ] than [ London Rome Paris Amsterdam ] . @@1@@
+</block>
+<block ID='drather-birds' invert-odd>
+I would rather have [ oaks birches firs pines ] than [ grass animals bushes shrubs ] . @@3@@ @@5@@
+I would rather have [ grass animals bushes shrubs ] than [ oaks birches firs pines ] . @@4@@ @@5@@
+I would rather have [ oaks birches firs pines ] than [ trees trees trees trees ] . @@2@@
+I would rather have [ trees trees trees trees ] than [ oaks birches firs pines ] . @@1@@
+</block>
+<block ID='drather-plastics' invert-odd>
+I would rather have [ polyester nylon vinyl PVC ] than [ wood cotton glass leather ] . @@3@@ @@5@@
+I would rather have [ wood cotton glass leather ] than [ polyester nylon vinyl PVC ] . @@4@@ @@5@@
+I would rather have [ polyester nylon vinyl PVC ] than [ plastic plastic plastic plastic ] . @@2@@
+I would rather have [ plastic plastic plastic plastic ] than [ polyester nylon vinyl PVC ] . @@1@@
+</block>
+<block ID='drather-furniture' invert-odd>
+I would rather have [ chairs tables wardrobes beds ] than [ cutlery paintings carpeting minimalism ] . @@3@@ @@5@@
+I would rather have [ cutlery paintings carpeting minimalism ] than [ chairs tables wardrobes beds ] . @@4@@ @@5@@
+I would rather have [ chairs tables wardrobes beds ] than [ furniture furniture furniture furniture ] . @@2@@
+I would rather have [ furniture furniture furniture furniture ] than [ chairs tables wardrobes beds ] . @@1@@
+</block>
+<block ID='drather-wines-name' invert-odd>
+I would rather have [ Merlot Chardonnay Chianti Zinfandel ] than [ coca-cola water sprite beer ] . @@3@@ @@5@@
+I would rather have [ coca-cola water sprite beer ] than [ Merlot Chardonnay Chianti Zinfandel ] . @@4@@ @@5@@
+I would rather have [ Merlot Chardonnay Chianti Zinfandel ] than [ wine wine wine wine ] . @@2@@
+I would rather have [ wine wine wine wine ] than [ Merlot Chardonnay Chianti Zinfandel ] . @@1@@
+</block>
+<block ID='drather-animals' invert-odd>
+I would rather have [ cats dogs hamsters birds ] than [ cars food humans objects ] . @@3@@ @@5@@
+I would rather have [ cars food humans objects ] than [ cats dogs hamsters birds ] . @@4@@ @@5@@
+I would rather have [ cats dogs hamsters birds ] than [ animals animals animals animals ] . @@2@@
+I would rather have [ animals animals animals animals ] than [ cats dogs hamsters birds ] . @@1@@
+</block>
+<block ID='drather-sports' invert-odd>
+I would rather have [ football basketball badminton running ] than [ music gaming shopping eating ] . @@3@@ @@5@@
+I would rather have [ music gaming shopping eating ] than [ football basketball badminton running ] . @@4@@ @@5@@
+I would rather have [ football basketball badminton running ] than [ sports sports sports sports ] . @@2@@
+I would rather have [ sports sports sports sports ] than [ football basketball badminton running ] . @@1@@
+</block>
+<block ID='drather-music' invert-odd>
+I would rather have [ pop rock jazz techno folk ] than [ sports gaming eating partying ] . @@3@@ @@5@@
+I would rather have [ sports gaming eating partying ] than [ pop rock jazz techno folk ] . @@4@@ @@5@@
+I would rather have [ pop rock jazz techno folk ] than [ music music music music ] . @@2@@
+I would rather have [ music music music music ] than [ pop rock jazz techno folk ] . @@1@@
+</block>
+<block ID='drather-vegetables' invert-odd>
+I would rather have [ carrots eggplants cauliflowers tomatoes ] than [ meat fruits potatoes pancakes ] . @@3@@ @@5@@
+I would rather have [ meat fruits potatoes pancakes ] than [ carrots eggplants cauliflowers tomatoes ] . @@4@@ @@5@@
+I would rather have [ carrots eggplants cauliflowers tomatoes ] than [ vegetables vegetables vegetables vegetables ] . @@2@@
+I would rather have [ vegetables vegetables vegetables vegetables ] than [ carrots eggplants cauliflowers tomatoes ] . @@1@@
+</block>
+<block ID='drather-fruits' invert-odd>
+I would rather have [ apples peaches lemons oranges ] than [ vegetables meat potatoes pancakes ] . @@3@@ @@5@@
+I would rather have [ vegetables meat potatoes pancakes ] than [ apples peaches lemons oranges ] . @@4@@ @@5@@
+I would rather have [ apples peaches lemons oranges ] than [ fruits fruits fruits fruits ] . @@2@@
+I would rather have [ fruits fruits fruits fruits ] than [ apples peaches lemons oranges ] . @@1@@
+</block>
+<block ID='drather-pork' invert-odd>
+I would rather have [ ham prosciutto bacon lard ] than [ fish vegetables poultry beef ] . @@3@@ @@5@@
+I would rather have [ fish vegetables poultry beef ] than [ ham prosciutto bacon lard ] . @@4@@ @@5@@
+I would rather have [ ham prosciutto bacon lard ] than [ pork pork pork pork ] . @@2@@
+I would rather have [ pork pork pork pork ] than [ ham prosciutto bacon lard ] . @@1@@
+</block>
+<block ID='drather-desserts' invert-odd>
+I would rather have [ tiramisu pastries ice-cream cheesecake ] than [ salads pasta fruits vegetables ] . @@3@@ @@5@@
+I would rather have [ salads pasta fruits vegetables ] than [ tiramisu pastries ice-cream cheesecake ] . @@4@@ @@5@@
+I would rather have [ tiramisu pastries ice-cream cheesecake ] than [ desserts desserts desserts desserts ] . @@2@@
+I would rather have [ desserts desserts desserts desserts ] than [ tiramisu pastries ice-cream cheesecake ] . @@1@@
+</block>
+<block ID='drather-seafood' invert-odd>
+I would rather have [ salmon crabs oysters caviar ] than [ chicken meat poultry beef ] . @@3@@ @@5@@
+I would rather have [ chicken meat poultry beef ] than [ salmon crabs oysters caviar ] . @@4@@ @@5@@
+I would rather have [ salmon crabs oysters caviar ] than [ seafood seafood seafood seafood ] . @@2@@
+I would rather have [ seafood seafood seafood seafood ] than [ salmon crabs oysters caviar ] . @@1@@
+</block>
+<block ID='drather-apartment' invert-odd>
+I would rather have [ lofts penthouses condos studios ] than [ farms villas bungalows cottages ] . @@3@@ @@5@@
+I would rather have [ farms villas bungalows cottages ] than [ lofts penthouses condos studios ] . @@4@@ @@5@@
+I would rather have [ lofts penthouses condos studios ] than [ apartments apartments apartments apartments ] . @@2@@
+I would rather have [ apartments apartments apartments apartments ] than [ lofts penthouses condos studios ] . @@1@@
+</block>
+<block ID='drather-movies' invert-odd>
+I would rather have [ thrillers westerns comedies documentaries ] than [ essays textbooks games reading ] . @@3@@ @@5@@
+I would rather have [ essays textbooks games reading ] than [ thrillers westerns comedies documentaries ] . @@4@@ @@5@@
+I would rather have [ thrillers westerns comedies documentaries ] than [ movies movies movies movies ] . @@2@@
+I would rather have [ movies movies movies movies ] than [ thrillers westerns comedies documentaries ] . @@1@@
+</block>
+<block ID='drather-jewelry' invert-odd>
+I would rather have [ bracelets necklaces earrings rings ] than [ handbags scarfs glasses shoes ] . @@3@@ @@5@@
+I would rather have [ handbags scarfs glasses shoes ] than [ bracelets necklaces earrings rings ] . @@4@@ @@5@@
+I would rather have [ bracelets necklaces earrings rings ] than [ jewelry jewelry jewelry jewelry ] . @@2@@
+I would rather have [ jewelry jewelry jewelry jewelry ] than [ bracelets necklaces earrings rings ] . @@1@@
+</block>
+<block ID='drather-pets' invert-odd>
+I would rather have [ cats dogs rabbits hamsters ] than [ tigers bears lions whales ] . @@3@@ @@5@@
+I would rather have [ tigers bears lions whales ] than [ cats dogs rabbits hamsters ] . @@4@@ @@5@@
+I would rather have [ cats dogs rabbits hamsters ] than [ pets pets pets pets ] . @@2@@
+I would rather have [ pets pets pets pets ] than [ cats dogs rabbits hamsters ] . @@1@@
+</block>
+<block ID='drather-rain' invert-odd>
+I would rather have [ drizzle rainstorms showers downpours ] than [ sunshine snow fog mist ] . @@3@@ @@5@@
+I would rather have [ sunshine snow fog mist ] than [ drizzle rainstorms showers downpours ] . @@4@@ @@5@@
+I would rather have [ drizzle rainstorms showers downpours ] than [ rain rain rain rain ] . @@2@@
+I would rather have [ rain rain rain rain ] than [ drizzle rainstorms showers downpours ] . @@1@@
+</block>
+<block ID='drather-nature' invert-odd>
+I would rather have [ mountains forests lakes marshes ] than [ cities malls houses concrete ] . @@3@@ @@5@@
+I would rather have [ cities malls houses concrete ] than [ mountains forests lakes marshes ] . @@4@@ @@5@@
+I would rather have [ mountains forests lakes marshes ] than [ nature nature nature nature ] . @@2@@
+I would rather have [ nature nature nature nature ] I_prefer [ mountains forests lakes marshes ] . @@1@@
+</block>
+<block ID='drather-senses' invert-odd>
+He would rather have [ sight hearing touch taste ] than [ rumors reports reconstructions guesses ] . @@3@@ @@5@@
+He would rather have [ rumors reports reconstructions guesses ] than [ sight hearing touch taste ] . @@4@@ @@5@@
+He would rather have [ sight hearing touch taste ] than [ senses senses senses senses ] . @@2@@
+He would rather have [ senses senses senses senses ] he_prefers [ sight hearing touch taste ] . @@1@@
+</block>
+<block ID='drather-emotions' invert-odd>
+He would rather have [ joy fear love sadness ] than [ wisdom stupidity bravery wickedness ] . @@3@@ @@5@@
+He would rather have [ wisdom stupidity bravery wickedness ] than [ joy fear love sadness ] . @@4@@ @@5@@
+He would rather have [ joy fear love sadness ] than [ emotions emotions emotions emotions ] . @@2@@
+He would rather have [ emotions emotions emotions emotions ] than [ joy fear love sadness ] . @@1@@
+</block>
+<block ID='drather-books' invert-odd>
+I would rather have [ textbooks essays novels biographies ] than [ musics films cartoons paintings ] . @@3@@ @@5@@
+I would rather have [ musics films cartoons paintings ] than [ textbooks essays novels biographies ] . @@4@@ @@5@@
+I would rather have [ textbooks essays novels biographies ] than [ books books books books ] . @@2@@
+I would rather have [ books books books books ] than [ textbooks essays novels biographies ] . @@1@@
+</block>
+<block ID='drather-workers' invert-odd>
+I would rather have [ clerks waiters caretakers teachers ] than [ factories restaurants schools offices ] . @@3@@ @@5@@
+I would rather have [ factories restaurants schools offices ] than [ clerks waiters caretakers teachers ] . @@4@@ @@5@@
+I would rather have [ clerks waiters caretakers teachers ] than [ workers workers workers workers ] . @@2@@
+I would rather have [ workers workers workers workers ] than [ clerks waiters caretakers teachers ] . @@1@@
+</block>
+<block ID='drather-scientists' invert-odd>
+I would rather have [ biologists geneticists astronomers physicists ] than [ clerks waiters caretakers janitors ] . @@3@@ @@5@@
+I would rather have [ clerks waiters caretakers janitors ] than [ biologists geneticists astronomers physicists ] . @@4@@ @@5@@
+I would rather have [ biologists geneticists astronomers physicists ] than [ scientists scientists scientists scientists ] . @@2@@
+I would rather have [ scientists scientists scientists scientists ] than [ biologists geneticists astronomers physicists ] . @@1@@
+</block>
+<block ID='drather-countries-name' invert-odd>
+I would rather study [ Italy Spain Germany France ] than whole [ continents planets oceans hemispheres ] . @@3@@ @@5@@
+I would rather study whole [ continents planets oceans hemispheres ] than [ Italy Spain Germany France ] . @@4@@ @@5@@
+I would rather study [ Italy Spain Germany France ] than European [ countries a_countries countries countries ] . @@2@@
+I would rather study European [ countries countries countries countries ] than [ Italy Spain Germany France ] . @@1@@
+</block>
+<block ID='drather-painters-name' invert-odd>
+I would rather have [ Picasso Rembrandt Matisse Caravaggio ] than [ a_clerk a_waiter a_caretaker a_teacher ] . @@3@@ @@5@@
+I would rather have [ clerks waiters caretakers teachers ] than [ Picasso Rembrandt Matisse Caravaggio ] . @@4@@ @@5@@
+I would rather have [ Picasso Rembrandt Matisse Caravaggio ] than [ a_painter a_painter a_painter a_painter ] . @@2@@
+I would rather have [ painters painters painters painters  ] than [ Picasso Rembrandt Matisse Caravaggio ] . @@1@@
+</block>
+<block ID='drather-politicians-name' invert-odd>
+I would rather have [ Churchill Obama Lincoln Merkel ] than [ a_waiter a_caretaker a_driver a_farmer ] . @@3@@ @@5@@
+I would rather have [ a_waiter a_caretaker a_driver a_farmer ] than [ Churchill Obama Lincoln Merkel ] . @@4@@ @@5@@
+I would rather have [ Churchill Obama Lincoln Merkel ] than [ a_politician a_politician a_politician a_politician  ] . @@2@@
+I would rather have [ a_politician a_politician a_politician a_politician ] than [ Churchill Obama Lincoln Merkel ] . @@1@@
+</block>
+<block ID='drather-actors-name' invert-odd>
+I would rather have [ Jack_Nicholson Morgan_Freeman Harrison_Ford Sean_Connery ] than [ a_mothers a_girls a_woman a_lady ] . @@3@@ @@5@@
+I would rather have [ a_mothers a_girls a_woman a_lady ] than [ Jack_Nicholson Morgan_Freeman Harrison_Ford Sean_Connery ] . @@4@@ @@5@@
+I would rather have [ Jack_Nicholson Morgan_Freeman Harrison_Ford Sean_Connery ] than [ an_actor an_actor an_actor an_actor ] . @@2@@
+I would rather have [ an_actor an_actor an_actor an_actor ] than [ Jack_Nicholson Morgan_Freeman Harrison_Ford Sean_Connery ] . @@1@@
+</block>
