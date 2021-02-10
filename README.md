@@ -1,10 +1,27 @@
-# Paper:On the Taxonomic Pitfalls of Transformer Networks 
+# DuckRabbit: a dataset on taxonomic presupposition violations
 
-The repository include a novel dataset: **DUCKRABBIT**, to probe the ability of neural models to capture semantic hierarchies in use.
-The dataset was collected by the authors and checked with the help of WordNET. Acceptability was treated as binary.
-The data include examples which are either in a taxonomic relation or disjoint. In addition, for disjoint example we also added its inverse. This yielding cases where the presuppositions are satisfied and cases where they are violated due to the unwanted presence/absence of a taxonomic relation or to its wrong order.
 
-This repositoy contains the pattern file used to generate the data (pattern_taxonomies-duckrabbit-dataset.txt) and the expanded dataset (duckrabbit_data.tsv).
+The repository contains the dataset used in `On the Taxonomic Pittfalls of Transformer Networks` to probe the ability of neural models to capture semantic hierarchies and their use in constructions that enforce presuppositions on the taxonomic relation (“birds/sparrows”, “cities/Rome”) among two arguments.
+
+The dataset was created by the authors as set of templates designed to be acceptable or not acceptable. Acceptability was treated as binary. Potentially problematic hierarchical relations were checked with the help of WordNET. The templates were expanded by the script,, generating a set of 8355 acceptable and 11697 unacceptable sentences, which may be used to test the ability of any artificial language processing system to detect pure semantic deviance (following much work on syntactic deviance, e.g. Gulordava et al 2018 , Willcox et al. 2018, Futrell at al. 2019).
+
+To generate the templates, we considered a sample set of constructions that enforce presuppositions on the taxonomic status of their arguments, i.e. whether one argument can denote a subset of the other, and if so, which one should denote the superset. We then created cases which systematically obeyed or violated these presuppositions. To examplify,  comparatives (1) forbit taxonomic relations, while “in particular” (2) enforces it in a SUPERSET - SUBSET order.
+
+```
+1) a. I like birds more than dogs
+    b. I like dogs more than birds
+    c. *I like birds more than sparrows.
+    d. *I like sparrows more than birds
+2)  a. *I like birds, and dogs in particular.
+     b. *I like dogs, and birds in particular
+     c.  I like birds, and sparrows in particular.
+     d. *I like sparrows, and birds in particular.
+```     
+
+In cases like (1a,b) where neither argument is supposed to be a subset of the other, we give both orders. 
+
+This repository contains the pattern file used to generate the data (pattern_taxonomies-duckrabbit-dataset.txt) and the expanded dataset (duckrabbit_data.tsv). Both the semantic category of the linearly first argument (e.g. fruits, dogs...) and the type of construction are given in the ID of the examples.
+
 
 
 ## Template File:
